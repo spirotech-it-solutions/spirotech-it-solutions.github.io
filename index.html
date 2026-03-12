@@ -4,93 +4,177 @@
   <meta charset="UTF-8">
   <title>SpiroTech IT Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --bg: #0b0d10;
+      --panel: #11141a;
+      --text: #eaeaea;
+      --muted: #9ca3af;
+      --accent: #00e5ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0A0A0A;
-      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
-    header {
+
+    /* NAV */
+    nav {
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 24px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 100px 20px;
       text-align: center;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+    }
+
+    .hero img {
+      width: 140px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 12px;
+      color: var(--accent);
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 32px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* SECTIONS */
+    .section {
+      max-width: 1100px;
+      margin: auto;
       padding: 80px 20px;
     }
-    img {
-      max-width: 180px;
-      margin-bottom: 20px;
-    }
-    h1 {
-      color: #00E5FF;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .card {
-      background: #111;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-    }
-    footer {
+
+    .section h2 {
       text-align: center;
-      padding: 30px;
-      color: #777;
-      border-top: 1px solid #222;
+      font-size: 2rem;
+      margin-bottom: 48px;
     }
-    a {
-      color: #00E5FF;
-      text-decoration: none;
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--panel);
+      border-radius: 12px;
+      padding: 28px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="SpiroTech IT Solutions Logo">
-  <h1>Practical IT Solutions for Individuals & Small Businesses</h1>
-  <p>Reliable support, automation, and consulting that helps technology work for you — not against you.</p>
-</header>
+<nav>
+  <strong>SpiroTech IT</strong>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Request a Quote</a>
+  </div>
+</nav>
 
-<section>
+<section class="hero">
+  <img src="logo.png" alt="SpiroTech IT Solutions Logo">
+  <h1>Practical IT Solutions</h1>
+  <p>
+    Reliable IT support, automation, and consulting for individuals and small businesses —
+    focused on efficiency, security, and real results.
+  </p>
+  <a class="btn" href="contact.html">Request a Quote</a>
+</section>
+
+<section class="section">
   <h2>Services</h2>
 
-  <div class="card">
-    <h3>IT Support & Maintenance</h3>
-    <p>Windows troubleshooting, device support, printers, networks, and Microsoft 365 assistance.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>IT Support & Maintenance</h3>
+      <p>Windows troubleshooting, device support, printers, networking, and Microsoft 365 assistance.</p>
+    </div>
+
+    <div class="card">
+      <h3>Automation & Workflow</h3>
+      <p>Google Sheets automation, chatbot integrations, and process optimisation.</p>
+    </div>
+
+    <div class="card">
+      <h3>IT Consulting</h3>
+      <p>Cost‑effective IT planning and setup for individuals and small businesses.</p>
+    </div>
   </div>
-
-  <div class="card">
-    <h3>Automation & Workflow Optimisation</h3>
-    <p>Google Sheets automation, chatbot integrations, and process improvement to save time and reduce errors.</p>
-  </div>
-
-  <div class="card">
-    <h3>IT Consulting</h3>
-    <p>Cost-effective IT planning and setup for individuals and small businesses.</p>
-  </div>
-</section>
-
-<section>
-  <h2>Portfolio</h2>
-
-  <div class="card">
-    <p>
-      ✅ Workflow automation using Google Apps Script<br>
-      ✅ Chatbot integrations with Google Sheets<br>
-      ✅ Internal IT support for business environments<br>
-      ✅ Data extraction and reporting solutions
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Request a Quote</h2>
-  <p>
-    Email: <a href="mailto:info.giovannemoller@gmail.com">spirotech.solutions@outlook.com</a><br>
-    WhatsApp: <a href="https://wa.me/27751101718">+27 75 110 1718</a>
-  </p>
 </section>
 
 <footer>
