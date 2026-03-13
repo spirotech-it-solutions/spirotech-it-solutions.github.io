@@ -79,15 +79,97 @@ body {
   text-shadow: 0 0 10px rgba(0, 229, 255, 0.25);
 }
 
-/* HERO (optional per page) */
+/* HERO */
 .hero {
-  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 120px 20px;
   text-align: center;
-  background: radial-gradient(circle at top, #0f172a, #020617);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0, 229, 255, 0.16), transparent 22%),
+    radial-gradient(circle at 80% 30%, rgba(0, 229, 255, 0.10), transparent 18%),
+    linear-gradient(135deg, #020617 0%, #0b1120 45%, #07131f 100%);
 }
-.hero img { width: 140px; margin-bottom: 24px; }
-.hero h1 { font-size: 2.6rem; margin-bottom: 12px; color: var(--accent); }
-.hero p  { max-width: 680px; margin: 0 auto 32px; color: var(--muted); font-size: 1.05rem; }
+
+/* Animated grid overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  opacity: 0.28;
+  background-image:
+    linear-gradient(rgba(0, 229, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.65), rgba(0,0,0,0.08));
+  animation: heroGridMove 18s linear infinite;
+}
+
+/* Soft floating glow blobs */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: -10%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 25% 40%, rgba(0, 229, 255, 0.12), transparent 18%),
+    radial-gradient(circle at 75% 60%, rgba(0, 229, 255, 0.10), transparent 16%),
+    radial-gradient(circle at 60% 20%, rgba(255, 255, 255, 0.05), transparent 14%);
+  filter: blur(20px);
+  animation: heroGlowFloat 10s ease-in-out infinite alternate;
+}
+
+/* Larger logo */
+.hero img {
+  width: clamp(170px, 18vw, 240px);
+  margin-bottom: 28px;
+  filter:
+    drop-shadow(0 10px 24px rgba(0, 229, 255, 0.16))
+    drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  margin-bottom: 14px;
+  color: var(--accent);
+  letter-spacing: 0.3px;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  color: var(--muted);
+  font-size: 1.06rem;
+}
+
+/* Animation keyframes */
+@keyframes heroGridMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(48px);
+  }
+}
+
+@keyframes heroGlowFloat {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(0, -12px, 0) scale(1.04);
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero::before,
+  .hero::after {
+    animation: none;
+  }
+}
 
 /* ============ BUTTON MICRO-INTERACTIONS ============ */
 
