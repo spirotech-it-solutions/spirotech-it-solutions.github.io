@@ -1,62 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Services | SpiroTech IT Solutions</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0A0A0A;
-      color: #FFFFFF;
-    }
-    nav a {
-      color: #00E5FF;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  styles.css
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Request a Quote</a>
+<!-- NAV -->
+<nav class="nav">
+  <strong class="brand">SpiroTech IT</strong>
+  <div>
+    index.htmlHome</a>
+    services.htmlServices</a>
+    portfolio.htmlPortfolio</a>
+    contact.htmlRequest a Quote</a>
+  </div>
 </nav>
 
-<section>
-  <h1>Services</h1>
+<!-- HERO (subtle) -->
+<header class="hero" style="padding:70px 20px;">
+  <h1 class="m0">Services</h1>
+  <p class="mt8">Practical IT support, smart automation, and advisory for individuals and small businesses.</p>
+</header>
 
-  <div class="card">
-    <h3>IT Support & Maintenance</h3>
-    <p>Windows troubleshooting, device support, printers, networking, and Microsoft 365 assistance.</p>
-  </div>
+<!-- SECTION: IT Support & Maintenance -->
+<section class="section">
+  <h2>IT Support & Maintenance</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Workstations & Devices</h3>
+      <div class="row"><div class="badge">PC</div><div>Windows troubleshooting and performance tuning</div></div>
+      <div class="row"><div class="badge">DRV</div><div>Printer setup, drivers, and queue issues</div></div>
+      <div class="row"><div class="badge">NET</div><div>Basic networking: Wi‑Fi, cabling, routers, DNS</div></div>
+      <div class="row"><div class="badge">O365</div><div>Microsoft 365 users, mailboxes, and apps support</div></div>
+    </div>
 
-  <div class="card">
-    <h3>Automation & Workflow Optimisation</h3>
-    <p>Google Sheets automation, chatbot integrations, and workflow improvements.</p>
-  </div>
+    <div class="card">
+      <h3>Preventative Care</h3>
+      <div class="row"><div class="badge">UPD</div><div>OS updates & patch posture checks</div></div>
+      <div class="row"><div class="badge">BKP</div><div>Backup setup guidance (OneDrive / Drive / local)</div></div>
+      <div class="row"><div class="badge">SEC</div><div>Basic security hygiene & device hardening</div></div>
+      <div class="row"><div class="badge">DOC</div><div>Documentation of device inventory & setups</div></div>
+    </div>
 
-  <div class="card">
-    <h3>IT Consulting</h3>
-    <p>Cost-effective IT planning and setup for individuals and small businesses.</p>
+    <div class="card plan">
+      <h3>Monthly Support (By Quote)</h3>
+      <p class="mt8">Flexible retained hours for proactive care and priority response.</p>
+      <div class="row"><div class="badge">SLA</div><div>Priority response windows</div></div>
+      <div class="row"><div class="badge">RMM</div><div>Lightweight monitoring & maintenance (where applicable)</div></div>
+      <div class="row"><div class="badge">QBR</div><div>Quarterly health checks & recommendations</div></div>
+      <p class="mt16 center">
+        contact.htmlRequest a Quote</a>
+      </p>
+    </div>
   </div>
 </section>
 
+<!-- SECTION: Automation & Workflow -->
+<section class="section">
+  <h2>Automation & Workflow Optimisation</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Google Workspace / Sheets</h3>
+      <div class="row"><div class="badge">GAS</div><div>Google Apps Script automations (triggers, emails, cleanups)</div></div>
+      <div class="row"><div class="badge">GSH</div><div>Data validation, lookup logic, and reports</div></div>
+      <div class="row"><div class="badge">WATI</div><div>Chatbot ↔ Sheets integrations</div></div>
+      <div class="row"><div class="badge">ZAP</div><div>Zapier flows for cross‑app automation</div></div>
+    </div>
+
+    <div class="card">
+      <h3>Business Efficiency</h3>
+      <div class="row"><div class="badge">ETL</div><div>Data extraction, transformation & cleanup</div></div>
+      <div class="row"><div class="badge">OPS</div><div>Reduce manual steps, improve consistency</div></div>
+      <div class="row"><div class="badge">REP</div><div>Automated summaries & dashboards (Sheets)</div></div>
+      <div class="row"><div class="badge">QA</div><div>Checks that catch errors before they spread</div></div>
+    </div>
+
+    <div class="card plan">
+      <h3>Automation Packages (By Quote)</h3>
+      <p class="mt8">Scoping session → build → handover docs. Fixed fee after scope.</p>
+      <div class="row"><div class="badge">SCP</div><div>1‑hour scoping workshop (credit toward build)</div></div>
+      <div class="row"><div class="badge">DEV</div><div>Build, test, iterate with sample data</div></div>
+      <div class="row"><div class="badge">DOC</div><div>Clear documentation & basic training</div></div>
+      <p class="mt16 center">
+        contact.htmlRequest a Quote</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Consulting -->
+<section class="section">
+  <h2>IT Consulting</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Advisory</h3>
+      <div class="row"><div class="badge">AUD</div><div>Lightweight audits of current setup & risks</div></div>
+      <div class="row"><div class="badge">PLAN</div><div>Roadmaps focused on cost, uptime, and simplicity</div></div>
+      <div class="row"><div class="badge">BUY</div><div>Vendor & hardware guidance to avoid overspend</div></div>
+    </div>
+
+    <div class="card">
+      <h3>Small Business Setup</h3>
+      <div class="row"><div class="badge">NET</div><div>Basic network layout and Wi‑Fi hygiene</div></div>
+      <div class="row"><div class="badge">ID</div><div>Identity & device basics (users, MFA, backups)</div></div>
+      <div class="row"><div class="badge">M365</div><div>Mailbox, SharePoint/Drive structure, permissions</div></div>
+    </div>
+
+    <div class="card plan">
+      <h3>Engage by Quote</h3>
+      <p class="mt8">Clear scope, deliverables, and timeline before any work begins.</p>
+      <p class="mt16 center">
+        contact.htmlRequest a Quote</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 SpiroTech IT Solutions
+</footer>
 </body>
 </html>
