@@ -12,59 +12,80 @@
   <link rel="stylesheet" href="../styles.css" />
 
   <style>
+  .contact-wrap {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+  }
+
+  .contact-box {
+    background: var(--panel);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 28px;
+  }
+
+  .contact-box h3 {
+    margin-top: 0;
+    color: var(--accent);
+  }
+
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-list li {
+    margin: 16px 0;
+    color: #c9d4df; /* brighter than muted */
+    line-height: 1.6;
+  }
+
+  .contact-list strong {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  /* Make links much more visible on dark background */
+  .contact-list a {
+    color: #7fefff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.18s ease, text-shadow 0.18s ease;
+  }
+
+  .contact-list a:hover {
+    color: #b8f8ff;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.25);
+    text-decoration: underline;
+  }
+
+  .contact-list a:visited {
+    color: #91f5ff;
+  }
+
+  .contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .note {
+    color: #b8c7d6; /* lighter helper text */
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 900px) {
     .contact-wrap {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 24px;
+      grid-template-columns: 1fr;
     }
-
-    .contact-box {
-      background: var(--panel);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 12px;
-      padding: 28px;
-    }
-
-    .contact-box h3 {
-      margin-top: 0;
-      color: var(--accent);
-    }
-
-    .contact-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .contact-list li {
-      margin: 14px 0;
-      color: var(--muted);
-    }
-
-    .contact-list strong {
-      color: var(--text);
-      display: block;
-      margin-bottom: 4px;
-    }
-
-    .contact-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
-    }
-
-    .note {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 900px) {
-      .contact-wrap {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
