@@ -1,183 +1,133 @@
-/* ============ SpiroTech Global Styles ============ */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SpiroTech IT Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-:root {
-  --bg: #0b0d10;
-  --panel: #11141a;
-  --text: #eaeaea;
-  --muted: #9ca3af;
-  --accent: #00e5ff;
-}
+  <!-- SEO (optional but recommended) -->
+  <meta name="description" content="Practical IT support, smart automation, and consulting for individuals and small businesses. Request a quote from SpiroTech IT Solutions." />
 
-* { box-sizing: border-box; }
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
+  <!-- Shared stylesheet (must be in the same folder as index.html) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
+<nav class="nav">
+  <strong class="brand">SpiroTech IT</strong>
+  <div>
+    /Home</a>
+    /services/Services</a>
+    /portfolio/Portfolio</a>
+    /contact/Request a Quote</a>
+  </div>
+</nav>
 
-/* NAV */
-.nav {
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
-  padding: 16px 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+<!-- HERO (subtle) -->
+<header class="hero" style="padding:70px 20px;">
+  <h1 class="m0">Services</h1>
+  <p class="mt8">Practical IT support, smart automation, and advisory for individuals and small businesses.</p>
+</header>
 
-.brand {
-  font-weight: 700;
-  letter-spacing: 0.3px;
-}
+<!-- SECTION: IT Support & Maintenance -->
+<section class="section">
+  <h2>IT Support & Maintenance</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Workstations & Devices</h3>
+      <div class="row"><div class="badge">PC</div><div>Windows troubleshooting and performance tuning</div></div>
+      <div class="row"><div class="badge">DRV</div><div>Printer setup, drivers, and queue issues</div></div>
+      <div class="row"><div class="badge">NET</div><div>Basic networking: Wi‑Fi, cabling, routers, DNS</div></div>
+      <div class="row"><div class="badge">O365</div><div>Microsoft 365 users, mailboxes, and apps support</div></div>
+    </div>
 
-.nav a {
-  color: var(--text);
-  text-decoration: none;
-  margin-left: 24px;
-  font-weight: 500;
-}
-.nav a:hover { color: var(--accent); }
+    <div class="card">
+      <h3>Preventative Care</h3>
+      <div class="row"><div class="badge">UPD</div><div>OS updates & patch posture checks</div></div>
+      <div class="row"><div class="badge">BKP</div><div>Backup setup guidance (OneDrive / Drive / local)</div></div>
+      <div class="row"><div class="badge">SEC</div><div>Basic security hygiene & device hardening</div></div>
+      <div class="row"><div class="badge">DOC</div><div>Documentation of device inventory & setups</div></div>
+    </div>
 
-/* ============ ACTIVE NAV LINK ============ */
+    <div class="card plan">
+      <h3>Monthly Support (By Quote)</h3>
+      <p class="mt8">Flexible retained hours for proactive care and priority response.</p>
+      <div class="row"><div class="badge">SLA</div><div>Priority response windows</div></div>
+      <div class="row"><div class="badge">RMM</div><div>Lightweight monitoring & maintenance (where applicable)</div></div>
+      <div class="row"><div class="badge">QBR</div><div>Quarterly health checks & recommendations</div></div>
+      <p class="mt16 center">
+        contact.htmlRequest a Quote</a>
+      </p>
+    </div>
+  </div>
+</section>
 
-/* Base nav link (already in your file) */
-/* .nav a { color: var(--text); ... } */
+<!-- SECTION: Automation & Workflow -->
+<section class="section">
+  <h2>Automation & Workflow Optimisation</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Google Workspace / Sheets</h3>
+      <div class="row"><div class="badge">GAS</div><div>Google Apps Script automations (triggers, emails, cleanups)</div></div>
+      <div class="row"><div class="badge">GSH</div><div>Data validation, lookup logic, and reports</div></div>
+      <div class="row"><div class="badge">WATI</div><div>Chatbot ↔ Sheets integrations</div></div>
+      <div class="row"><div class="badge">ZAP</div><div>Zapier flows for cross‑app automation</div></div>
+    </div>
 
-/* Current-page link */
-.nav a.active {
-  color: var(--accent);
-  position: relative;
-}
+    <div class="card">
+      <h3>Business Efficiency</h3>
+      <div class="row"><div class="badge">ETL</div><div>Data extraction, transformation & cleanup</div></div>
+      <div class="row"><div class="badge">OPS</div><div>Reduce manual steps, improve consistency</div></div>
+      <div class="row"><div class="badge">REP</div><div>Automated summaries & dashboards (Sheets)</div></div>
+      <div class="row"><div class="badge">QA</div><div>Checks that catch errors before they spread</div></div>
+    </div>
 
-/* Underline accent for current page (desktop & mobile) */
-.nav a.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -8px;                 /* distance below text */
-  height: 2px;
-  background: var(--accent);
-  border-radius: 2px;
-  opacity: 0.9;
-}
+    <div class="card plan">
+      <h3>Automation Packages (By Quote)</h3>
+      <p class="mt8">Scoping session → build → handover docs. Fixed fee after scope.</p>
+      <div class="row"><div class="badge">SCP</div><div>1‑hour scoping workshop (credit toward build)</div></div>
+      <div class="row"><div class="badge">DEV</div><div>Build, test, iterate with sample data</div></div>
+      <div class="row"><div class="badge">DOC</div><div>Clear documentation & basic training</div></div>
+      <p class="mt16 center">
+        contact.htmlRequest a Quote</a>
+      </p>
+    </div>
+  </div>
+</section>
 
-/* Optional: subtle hover lift on all nav links */
-.nav a:hover {
-  color: var(--accent);
-  text-shadow: 0 0 10px rgba(0, 229, 255, 0.25);
-}
+<!-- SECTION: Consulting -->
+<section class="section">
+  <h2>IT Consulting</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Advisory</h3>
+      <div class="row"><div class="badge">AUD</div><div>Lightweight audits of current setup & risks</div></div>
+      <div class="row"><div class="badge">PLAN</div><div>Roadmaps focused on cost, uptime, and simplicity</div></div>
+      <div class="row"><div class="badge">BUY</div><div>Vendor & hardware guidance to avoid overspend</div></div>
+    </div>
 
-/* HERO (optional per page) */
-.hero {
-  padding: 100px 20px;
-  text-align: center;
-  background: radial-gradient(circle at top, #0f172a, #020617);
-}
-.hero img { width: 140px; margin-bottom: 24px; }
-.hero h1 { font-size: 2.6rem; margin-bottom: 12px; color: var(--accent); }
-.hero p  { max-width: 680px; margin: 0 auto 32px; color: var(--muted); font-size: 1.05rem; }
+    <div class="card">
+      <h3>Small Business Setup</h3>
+      <div class="row"><div class="badge">NET</div><div>Basic network layout and Wi‑Fi hygiene</div></div>
+      <div class="row"><div class="badge">ID</div><div>Identity & device basics (users, MFA, backups)</div></div>
+      <div class="row"><div class="badge">M365</div><div>Mailbox, SharePoint/Drive structure, permissions</div></div>
+    </div>
 
-/* ============ BUTTON MICRO-INTERACTIONS ============ */
+    <div class="card plan">
+      <h3>Engage by Quote</h3>
+      <p class="mt8">Clear scope, deliverables, and timeline before any work begins.</p>
+      <p class="mt16 center">
+        contact.htmlRequest a Quote</a>
+      </p>
+    </div>
+  </div>
+</section>
 
-.btn {
-  display: inline-block;
-  padding: 14px 32px;
-  border-radius: 8px;
-  background: var(--accent);
-  color: #000;
-  font-weight: 600;
-  text-decoration: none;
-  border: 0;
-
-  /* Interaction polish */
-  transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease,
-    filter 0.18s ease;
-  will-change: transform;
-}
-
-/* Hover: lift + glow */
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(0, 229, 255, 0.28);
-  filter: brightness(1.05);
-}
-
-/* Active: press down */
-.btn:active {
-  transform: translateY(0);
-  box-shadow: 0 6px 16px rgba(0, 229, 255, 0.22);
-}
-
-/* Keyboard accessibility */
-.btn:focus-visible {
-  outline: none;
-  box-shadow:
-    0 0 0 3px rgba(0, 229, 255, 0.35),
-    0 10px 28px rgba(0, 229, 255, 0.28);
-}
-
-.btn:hover {
-  filter: brightness(1.05);
-}
-
-/* LAYOUT */
-.section { max-width: 1100px; margin: auto; padding: 80px 20px; }
-.section h2 { text-align: center; font-size: 2rem; margin-bottom: 48px; }
-
-/* CARDS & GRID */
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
-.card { background: var(--panel); border-radius: 12px; padding: 28px; border: 1px solid rgba(255,255,255,0.06); }
-.card h3 { margin-top: 0; color: var(--accent); }
-.card p  { color: var(--muted); font-size: 0.95rem; }
-
-/* ICON + TEXT row (for service bullets) */
-.row {
-  display: grid;
-  grid-template-columns: 36px 1fr;
-  gap: 12px;
-  align-items: start;
-  margin: 10px 0;
-}
-.badge {
-  width: 36px; height: 36px; border-radius: 8px;
-  display: grid; place-items: center;
-  background: #0e1820; border: 1px solid rgba(0,229,255,0.25); color: var(--accent);
-  font-weight: 700; font-size: 0.85rem;
-}
-
-/* PRICING TEASER (no public prices—CTA only) */
-.plan {
-  background: linear-gradient(180deg, rgba(0,229,255,0.08), rgba(0,229,255,0.02));
-  border: 1px solid rgba(0,229,255,0.15);
-}
-
-/* FOOTER */
-footer {
-  padding: 40px 20px;
-  text-align: center;
-  color: var(--muted);
-  border-top: 1px solid rgba(255,255,255,0.05);
-}
-
-/* UTILITIES */
-.center { text-align: center; }
-.m0   { margin: 0; }
-.mt8  { margin-top: 8px; }
-.mt16 { margin-top: 16px; }
-.mt24 { margin-top: 24px; }
-.mt32 { margin-top: 32px; }
-.mt48 { margin-top: 48px; }
+<footer>
+  © 2026 SpiroTech IT Solutions
+</footer>
+</body>
+</html>
