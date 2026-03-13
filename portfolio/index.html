@@ -2,12 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Portfolio | SpiroTech IT Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+  <title>Portfolio | SpiroTech IT Solutions</title>
+  <meta name="description" content="See examples of SpiroTech IT Solutions projects in IT support, automation, chatbot integrations, and process improvement." />
+  <link rel="canonical" href="https://spirotech-it-solutions.github.io/portfolio/" />
+
+  <meta property="og:title" content="Portfolio | SpiroTech IT Solutions" />
+  <meta property="og:description" content="See examples of SpiroTech IT Solutions projects in IT support, automation, chatbot integrations, and process improvement." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://spirotech-it-solutions.github.io/portfolio/" />
+  <meta property="og:image" content="https://spirotech-it-solutions.github.io/logo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio | SpiroTech IT Solutions" />
+  <meta name="twitter:description" content="See examples of SpiroTech IT Solutions projects in IT support, automation, chatbot integrations, and process improvement." />
+  <meta name="twitter:image" content="https://spirotech-it-solutions.github.io/logo.png" />
+
   <link rel="icon" type="image/png" href="../logo.png" />
 
-  <!-- Go up one level because this file is inside /portfolio/ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="../styles.css" />
 
   <style>
@@ -22,93 +38,91 @@
 </head>
 <body>
 
-<nav class="nav">
-  <strong class="brand">SpiroTech IT</strong>
-  <div>
-    <a href="../index.html">Home</a>
-    <a href="../about/">About</a>
-    <a href="../services/">Services</a>
-    <a href="../portfolio/" class="active">Portfolio</a>
-    <a href="../contact/" class="btn">Request a Quote</a>
-  </div>
-</nav>
+  <nav class="nav">
+    <strong class="brand">SpiroTech IT</strong>
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="../about/">About</a>
+      <a href="../services/">Services</a>
+      <a href="../portfolio/" class="active">Portfolio</a>
+      <a href="../contact/" class="btn">Request a Quote</a>
+    </div>
+  </nav>
 
-<section class="hero">
-  <img src="../logo.png" alt="SpiroTech IT Solutions Logo">
-  <h1>Portfolio</h1>
-  <p>Examples of practical IT support, automation, and process improvement solutions.</p>
-  <a class="btn" href="../contact/">Request a Quote</a>
-</section>
+  <section class="hero">
+    <img src="../logo.png" alt="SpiroTech IT Solutions Logo" />
+    <h1>Portfolio</h1>
+    <p>Examples of practical IT support, automation, and process improvement solutions.</p>
+    <a class="btn" href="../contact/">Request a Quote</a>
+  </section>
 
-<section class="section">
-  <div class="grid">
-
-    <!-- CASE STUDY 1 -->
-    <div class="case">
-      <h3>Google Sheets + Chatbot Data Flow</h3>
-      <div class="cols">
-        <div>
-          <p><strong>Problem:</strong> Manual collection and sorting of user responses caused delays and errors.</p>
-          <p><strong>Solution:</strong> Built a Google Apps Script workflow that listens for chatbot triggers (WATI), validates inputs, and auto-routes rows to the correct tabs.</p>
-          <p><strong>Outcome:</strong> Hours saved weekly, higher data accuracy, and no double capture.</p>
-          <div class="tags">
-            <span class="tag">Google Apps Script</span>
-            <span class="tag">Google Sheets</span>
-            <span class="tag">WATI</span>
-            <span class="tag">Zapier</span>
+  <section class="section">
+    <div class="grid">
+      <div class="case">
+        <h3>Google Sheets + Chatbot Data Flow</h3>
+        <div class="cols">
+          <div>
+            <p><strong>Problem:</strong> Manual collection and sorting of user responses caused delays and errors.</p>
+            <p><strong>Solution:</strong> Built a Google Apps Script workflow that listens for chatbot triggers (WATI), validates inputs, and auto-routes rows to the correct tabs.</p>
+            <p><strong>Outcome:</strong> Hours saved weekly, higher data accuracy, and no double capture.</p>
+            <div class="tags">
+              <span class="tag">Google Apps Script</span>
+              <span class="tag">Google Sheets</span>
+              <span class="tag">WATI</span>
+              <span class="tag">Zapier</span>
+            </div>
+          </div>
+          <div class="muted">
+            <p><em>Notes:</em> Included error handling &amp; notifications to flag anomalies, plus a readme for hand-over.</p>
+            <p><em>My role:</em> Design, implementation, test, and documentation.</p>
           </div>
         </div>
-        <div class="muted">
-          <p><em>Notes:</em> Included error handling & notifications to flag anomalies, plus a readme for hand-over.</p>
-          <p><em>My role:</em> Design, implementation, test, and documentation.</p>
+      </div>
+
+      <div class="case">
+        <h3>Small Business IT Support Stabilisation</h3>
+        <div class="cols">
+          <div>
+            <p><strong>Problem:</strong> Intermittent printer failures and Wi-Fi drop-outs impacting operations.</p>
+            <p><strong>Solution:</strong> Driver cleanup, standardized printer queues, router DNS adjustments, and basic device hardening.</p>
+            <p><strong>Outcome:</strong> Fewer support incidents, faster startup each day, and traceable documentation.</p>
+            <div class="tags">
+              <span class="tag">Windows</span>
+              <span class="tag">Networking</span>
+              <span class="tag">M365</span>
+              <span class="tag">Documentation</span>
+            </div>
+          </div>
+          <div class="muted">
+            <p><em>Notes:</em> Added lightweight maintenance checklist and a “when to call” guide for staff.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case">
+        <h3>Data Cleanup &amp; Reporting</h3>
+        <div class="cols">
+          <div>
+            <p><strong>Problem:</strong> Duplicates and inconsistent fields made reporting unreliable.</p>
+            <p><strong>Solution:</strong> ETL cleanup using Sheets formulas + Apps Script, added validation and import templates.</p>
+            <p><strong>Outcome:</strong> Consistent weekly reports and quicker decision-making.</p>
+            <div class="tags">
+              <span class="tag">ETL</span>
+              <span class="tag">Validation</span>
+              <span class="tag">Reporting</span>
+            </div>
+          </div>
+          <div class="muted">
+            <p><em>Notes:</em> Set up versioned tabs and a simple “revert” process.</p>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- CASE STUDY 2 -->
-    <div class="case">
-      <h3>Small Business IT Support Stabilisation</h3>
-      <div class="cols">
-        <div>
-          <p><strong>Problem:</strong> Intermittent printer failures and Wi-Fi drop-outs impacting operations.</p>
-          <p><strong>Solution:</strong> Driver cleanup, standardized printer queues, router DNS adjustments, and basic device hardening.</p>
-          <p><strong>Outcome:</strong> Fewer support incidents, faster startup each day, and traceable documentation.</p>
-          <div class="tags">
-            <span class="tag">Windows</span>
-            <span class="tag">Networking</span>
-            <span class="tag">M365</span>
-            <span class="tag">Documentation</span>
-          </div>
-        </div>
-        <div class="muted">
-          <p><em>Notes:</em> Added lightweight maintenance checklist and a “when to call” guide for staff.</p>
-        </div>
-      </div>
-    </div>
+  <footer>
+    © 2026 SpiroTech IT Solutions
+  </footer>
 
-    <!-- CASE STUDY 3 -->
-    <div class="case">
-      <h3>Data Cleanup & Reporting</h3>
-      <div class="cols">
-        <div>
-          <p><strong>Problem:</strong> Duplicates and inconsistent fields made reporting unreliable.</p>
-          <p><strong>Solution:</strong> ETL cleanup using Sheets formulas + Apps Script, added validation and import templates.</p>
-          <p><strong>Outcome:</strong> Consistent weekly reports and quicker decision-making.</p>
-          <div class="tags">
-            <span class="tag">ETL</span>
-            <span class="tag">Validation</span>
-            <span class="tag">Reporting</span>
-          </div>
-        </div>
-        <div class="muted">
-          <p><em>Notes:</em> Set up versioned tabs and a simple “revert” process.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<footer>© 2026 SpiroTech IT Solutions</footer>
 </body>
 </html>
