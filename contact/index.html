@@ -2,91 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact | SpiroTech IT Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Contact SpiroTech IT Solutions for practical IT support, automation, workflow optimisation, and consulting."
-  />
+  <title>Contact SpiroTech IT Solutions | Request a Quote</title>
+  <meta name="description" content="Contact SpiroTech IT Solutions for IT support, automation, workflow optimisation, Microsoft 365 help, and consulting. Request a quote by email, phone, or WhatsApp." />
+  <link rel="canonical" href="https://spirotech-it-solutions.github.io/contact/" />
+
+  <meta property="og:title" content="Contact SpiroTech IT Solutions | Request a Quote" />
+  <meta property="og:description" content="Contact SpiroTech IT Solutions for IT support, automation, workflow optimisation, Microsoft 365 help, and consulting. Request a quote by email, phone, or WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://spirotech-it-solutions.github.io/contact/" />
+  <meta property="og:image" content="https://spirotech-it-solutions.github.io/logo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact SpiroTech IT Solutions | Request a Quote" />
+  <meta name="twitter:description" content="Contact SpiroTech IT Solutions for IT support, automation, workflow optimisation, Microsoft 365 help, and consulting. Request a quote by email, phone, or WhatsApp." />
+  <meta name="twitter:image" content="https://spirotech-it-solutions.github.io/logo.png" />
 
   <link rel="icon" type="image/png" href="../logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="../styles.css" />
 
   <style>
-  .contact-wrap {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 24px;
-  }
-
-  .contact-box {
-    background: var(--panel);
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 12px;
-    padding: 28px;
-  }
-
-  .contact-box h3 {
-    margin-top: 0;
-    color: var(--accent);
-  }
-
-  .contact-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .contact-list li {
-    margin: 16px 0;
-    color: #c9d4df; /* brighter than muted */
-    line-height: 1.6;
-  }
-
-  .contact-list strong {
-    color: #ffffff;
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
-  }
-
-  /* Make links much more visible on dark background */
-  .contact-list a {
-    color: #7fefff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.18s ease, text-shadow 0.18s ease;
-  }
-
-  .contact-list a:hover {
-    color: #b8f8ff;
-    text-shadow: 0 0 10px rgba(0, 229, 255, 0.25);
-    text-decoration: underline;
-  }
-
-  .contact-list a:visited {
-    color: #91f5ff;
-  }
-
-  .contact-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 24px;
-  }
-
-  .note {
-    color: #b8c7d6; /* lighter helper text */
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  @media (max-width: 900px) {
     .contact-wrap {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
     }
-  }
-</style>
+
+    .contact-box {
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 28px;
+    }
+
+    .contact-box h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact-list li {
+      margin: 16px 0;
+      color: #c9d4df;
+      line-height: 1.6;
+    }
+
+    .contact-list strong {
+      color: #ffffff;
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .contact-list a {
+      color: #7fefff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.18s ease, text-shadow 0.18s ease;
+    }
+
+    .contact-list a:hover {
+      color: #b8f8ff;
+      text-shadow: 0 0 10px rgba(0, 229, 255, 0.25);
+      text-decoration: underline;
+    }
+
+    .contact-list a:visited {
+      color: #91f5ff;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .note {
+      color: #b8c7d6;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+      .contact-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -97,20 +110,18 @@
       <a href="../about/">About</a>
       <a href="../services/">Services</a>
       <a href="../portfolio/">Portfolio</a>
-      <a href="../contact/" class="btn">Request a Quote</a>
+      <a href="../contact/" class="active btn">Request a Quote</a>
     </div>
   </nav>
 
   <section class="hero">
-    <img src="../logo.png" alt="SpiroTech IT Solutions Logo">
+    <img src="../logo.png" alt="SpiroTech IT Solutions Logo" />
     <h1>Request a Quote</h1>
     <p>
       Tell us what you need help with and we’ll get back to you with a practical,
       cost-effective solution.
     </p>
-    <a class="btn" href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%20Solutions%2C%20I%27d%20like%20to%20request%20a%20quote.">
-      WhatsApp Us
-    </a>
+    <a class="btn" href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%20Solutions%2C%20I%27d%20like%20to%20request%20a%20quote.">WhatsApp Us</a>
   </section>
 
   <section class="section">
@@ -132,9 +143,7 @@
 
           <li>
             <strong>WhatsApp</strong>
-            <a href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%20Solutions%2C%20I%27d%20like%20to%20request%20a%20quote." target="_blank" rel="noopener noreferrer">
-              Chat on WhatsApp
-            </a>
+            <a href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%20Solutions%2C%20I%27d%20like%20to%20request%20a%20quote.">Chat on WhatsApp</a>
           </li>
 
           <li>
@@ -149,22 +158,9 @@
         </ul>
 
         <div class="contact-actions">
-          <a class="btn" href="mailto:spirotech.solutions@outlook.com?subject=Request%20a%20Quote">
-            Send Email
-          </a>
-
-          <a class="btn" href="tel:+27751101718">
-            Call Now
-          </a>
-
-          <a
-            class="btn"
-            href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%20Solutions%2C%20I%27d%20like%20to%20request%20a%20quote."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            WhatsApp
-          </a>
+          <a class="btn" href="mailto:spirotech.solutions@outlook.com?subject=Request%20a%20Quote">Send Email</a>
+          <a class="btn" href="tel:+27751101718">Call Now</a>
+          <a class="btn" href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%20Solutions%2C%20I%27d%20like%20to%20request%20a%20quote.">WhatsApp</a>
         </div>
       </div>
 
