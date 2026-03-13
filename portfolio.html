@@ -1,62 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Services | SpiroTech IT Solutions</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Portfolio | SpiroTech IT Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0A0A0A;
-      color: #FFFFFF;
-    }
-    nav a {
-      color: #00E5FF;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
+    .tags { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+    .tag  { font-size: .8rem; padding:6px 10px; border-radius:999px; background:#0e1820; border:1px solid rgba(0,229,255,.25); color:var(--accent);}
+    .case { background: var(--panel); border: 1px solid rgba(255,255,255,.06); border-radius: 12px; padding: 24px; }
+    .case h3 { margin-top:0; color: var(--accent); }
+    .cols { display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 800px) { .cols { grid-template-columns: 1fr; } }
+    .muted { color: var(--muted); }
   </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Request a Quote</a>
+<nav class="nav">
+  <strong class="brand">SpiroTech IT</strong>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="contact.html">Request a Quote</a>
+  </div>
 </nav>
 
-<section>
-  <h1>Services</h1>
+<header class="hero" style="padding:70px 20px;">
+  <h1 class="m0">Portfolio</h1>
+  <p class="mt8">Selected work that shows practical improvements in support, automation, and operations.</p>
+</header>
 
-  <div class="card">
-    <h3>IT Support & Maintenance</h3>
-    <p>Windows troubleshooting, device support, printers, networking, and Microsoft 365 assistance.</p>
-  </div>
+<section class="section">
+  <div class="grid">
 
-  <div class="card">
-    <h3>Automation & Workflow Optimisation</h3>
-    <p>Google Sheets automation, chatbot integrations, and workflow improvements.</p>
-  </div>
+    <!-- CASE STUDY 1 -->
+    <div class="case">
+      <h3>Google Sheets + Chatbot Data Flow</h3>
+      <div class="cols">
+        <div>
+          <p><strong>Problem:</strong> Manual collection and sorting of user responses caused delays and errors.</p>
+          <p><strong>Solution:</strong> Built a Google Apps Script workflow that listens for chatbot triggers (WATI), validates inputs, and auto‑routes rows to the correct tabs.</p>
+          <p><strong>Outcome:</strong> Hours saved weekly, higher data accuracy, and no double capture.</p>
+          <div class="tags">
+            <span class="tag">Google Apps Script</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">WATI</span>
+            <span class="tag">Zapier</span>
+          </div>
+        </div>
+        <div class="muted">
+          <p><em>Notes:</em> Included error handling & notifications to flag anomalies, plus a readme for hand‑over.</p>
+          <p><em>My role:</em> Design, implementation, test, and documentation.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="card">
-    <h3>IT Consulting</h3>
-    <p>Cost-effective IT planning and setup for individuals and small businesses.</p>
+    <!-- CASE STUDY 2 -->
+    <div class="case">
+      <h3>Small Business IT Support Stabilisation</h3>
+      <div class="cols">
+        <div>
+          <p><strong>Problem:</strong> Intermittent printer failures and Wi‑Fi drop‑outs impacting operations.</p>
+          <p><strong>Solution:</strong> Driver cleanup, standardized printer queues, router DNS adjustments, and basic device hardening.</p>
+          <p><strong>Outcome:</strong> Fewer support incidents, faster startup each day, and traceable documentation.</p>
+          <div class="tags">
+            <span class="tag">Windows</span>
+            <span class="tag">Networking</span>
+            <span class="tag">M365</span>
+            <span class="tag">Documentation</span>
+          </div>
+        </div>
+        <div class="muted">
+          <p><em>Notes:</em> Added lightweight maintenance checklist and a “when to call” guide for staff.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE STUDY 3 -->
+    <div class="case">
+      <h3>Data Cleanup & Reporting</h3>
+      <div class="cols">
+        <div>
+          <p><strong>Problem:</strong> Duplicates and inconsistent fields made reporting unreliable.</p>
+          <p><strong>Solution:</strong> ETL cleanup using Sheets formulas + Apps Script, added validation and import templates.</p>
+          <p><strong>Outcome:</strong> Consistent weekly reports and quicker decision‑making.</p>
+          <div class="tags">
+            <span class="tag">ETL</span>
+            <span class="tag">Validation</span>
+            <span class="tag">Reporting</span>
+          </div>
+        </div>
+        <div class="muted">
+          <p><em>Notes:</em> Set up versioned tabs and a simple “revert” process.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
+<footer>© 2026 SpiroTech IT Solutions</footer>
 </body>
 </html>
