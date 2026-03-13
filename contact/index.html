@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Request a Quote | SpiroTech IT Solutions</title>
+  <title>Portfolio | SpiroTech IT Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Go up one level because this file is inside /portfolio/ -->
   <link rel="stylesheet" href="../styles.css" />
-  <img src="../logo.png" alt="SpiroTech IT Solutions Logo">
+
   <style>
-    .contact-card { max-width:720px; margin:40px auto; background:var(--panel); border:1px solid rgba(255,255,255,.06); border-radius:12px; padding:28px; }
-    .contact-row { display:grid; grid-template-columns:110px 1fr; gap:12px; margin:12px 0; align-items:center; }
-    @media (max-width:680px){ .contact-row{ grid-template-columns:1fr; } }
-    .copy { font-size:.9rem; color:var(--muted); margin-top:6px; }
+    .tags { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+    .tag  { font-size: .8rem; padding:6px 10px; border-radius:999px; background:#0e1820; border:1px solid rgba(0,229,255,.25); color:var(--accent);}
+    .case { background: var(--panel); border: 1px solid rgba(255,255,255,.06); border-radius: 12px; padding: 24px; }
+    .case h3 { margin-top:0; color: var(--accent); }
+    .cols { display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 800px) { .cols { grid-template-columns: 1fr; } }
+    .muted { color: var(--muted); }
   </style>
 </head>
 <body>
@@ -18,43 +23,86 @@
 <nav class="nav">
   <strong class="brand">SpiroTech IT</strong>
   <div>
-    <a href="index.html" class="active">Home</a>
-    <a href="services/">Services</a>
-    <a href="portfolio/">Portfolio</a>
-    <a href="contact/" class="btn">Request a Quote</a>
+    <a href="../index.html">Home</a>
+    <a href="../services/">Services</a>
+    <a href="../portfolio/">Portfolio</a>
+    <a href="../contact/" class="btn active">Request a Quote</a>
   </div>
 </nav>
 
 <section class="hero">
-  <img src="logo.png" alt="SpiroTech IT Solutions Logo">
-  <h1>Practical IT Solutions</h1>
-  <p>...</p>
-  <a class="btn" href="contact/">Request a Quote</a>
+  <img src="../logo.png" alt="SpiroTech IT Solutions Logo">
+  <h1>Portfolio</h1>
+  <p>Examples of practical IT support, automation, and process improvement solutions.</p>
+  <a class="btn" href="../contact/">Request a Quote</a>
 </section>
 
 <section class="section">
-  <div class="contact-card">
-    <div class="contact-row">
-      <div><strong>Email</strong></div>
-      <div>
-        <a class="btn" href="mailto:spirotech.solutions@outlook.com?subject=Quote%20Request%20-%20SpiroTech%20IT&body=Hi%20SpiroTech%20IT%2C%0A%0ACompany%20name%20(or%20individual)%3A%20%0AService%20needed%3A%20(IT%20Support%20%7C%20Automation%20%7C%20Consulting)%0ADetails%3A%20%0ATiming%3A%20%0ALocation%3A%20%0A%0AThanks!">Email Us</a>
-        <div class="copy">spirotech.solutions@outlook.com</div>
+  <div class="grid">
+
+    <!-- CASE STUDY 1 -->
+    <div class="case">
+      <h3>Google Sheets + Chatbot Data Flow</h3>
+      <div class="cols">
+        <div>
+          <p><strong>Problem:</strong> Manual collection and sorting of user responses caused delays and errors.</p>
+          <p><strong>Solution:</strong> Built a Google Apps Script workflow that listens for chatbot triggers (WATI), validates inputs, and auto-routes rows to the correct tabs.</p>
+          <p><strong>Outcome:</strong> Hours saved weekly, higher data accuracy, and no double capture.</p>
+          <div class="tags">
+            <span class="tag">Google Apps Script</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">WATI</span>
+            <span class="tag">Zapier</span>
+          </div>
+        </div>
+        <div class="muted">
+          <p><em>Notes:</em> Included error handling & notifications to flag anomalies, plus a readme for hand-over.</p>
+          <p><em>My role:</em> Design, implementation, test, and documentation.</p>
+        </div>
       </div>
     </div>
 
-    <div class="contact-row">
-      <div><strong>WhatsApp</strong></div>
-      <div>
-        <!-- Replace with your preferred number if needed -->
-        <a class="btn" href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%2C%20I%27d%20like%20a%20quote.%20Service%3A%20IT%20Support%20%7C%20Automation%20%7C%20Consulting.%20A%20few%20details%3A%20">Chat on WhatsApp</a>
-        <div class="copy">+27 75 110 1718</div>
+    <!-- CASE STUDY 2 -->
+    <div class="case">
+      <h3>Small Business IT Support Stabilisation</h3>
+      <div class="cols">
+        <div>
+          <p><strong>Problem:</strong> Intermittent printer failures and Wi-Fi drop-outs impacting operations.</p>
+          <p><strong>Solution:</strong> Driver cleanup, standardized printer queues, router DNS adjustments, and basic device hardening.</p>
+          <p><strong>Outcome:</strong> Fewer support incidents, faster startup each day, and traceable documentation.</p>
+          <div class="tags">
+            <span class="tag">Windows</span>
+            <span class="tag">Networking</span>
+            <span class="tag">M365</span>
+            <span class="tag">Documentation</span>
+          </div>
+        </div>
+        <div class="muted">
+          <p><em>Notes:</em> Added lightweight maintenance checklist and a “when to call” guide for staff.</p>
+        </div>
       </div>
     </div>
 
-    <div class="contact-row">
-      <div><strong>Response</strong></div>
-      <div class="copy">We usually reply within business hours (same day). For urgent issues, mention “URGENT” in your message.</div>
+    <!-- CASE STUDY 3 -->
+    <div class="case">
+      <h3>Data Cleanup & Reporting</h3>
+      <div class="cols">
+        <div>
+          <p><strong>Problem:</strong> Duplicates and inconsistent fields made reporting unreliable.</p>
+          <p><strong>Solution:</strong> ETL cleanup using Sheets formulas + Apps Script, added validation and import templates.</p>
+          <p><strong>Outcome:</strong> Consistent weekly reports and quicker decision-making.</p>
+          <div class="tags">
+            <span class="tag">ETL</span>
+            <span class="tag">Validation</span>
+            <span class="tag">Reporting</span>
+          </div>
+        </div>
+        <div class="muted">
+          <p><em>Notes:</em> Set up versioned tabs and a simple “revert” process.</p>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
 
