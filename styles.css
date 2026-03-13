@@ -425,3 +425,133 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Contact / Quote Form */
+.contact-form-section {
+  padding: 3rem 0;
+}
+
+.contact-form {
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #dfe5ec;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+  color: #1c2a39;
+}
+
+.required {
+  color: #c62828;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+  font: inherit;
+  color: #16202a;
+  background: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #1f6feb;
+  box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.12);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.form-actions {
+  margin-top: 1.25rem;
+}
+
+.contact-form .btn {
+  min-width: 180px;
+}
+
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-status {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  display: none;
+  font-weight: 500;
+}
+
+.form-status.status-loading,
+.form-status.status-success,
+.form-status.status-error {
+  display: block;
+}
+
+.form-status.status-loading {
+  background: #eef4ff;
+  color: #174ea6;
+  border: 1px solid #cfe0ff;
+}
+
+.form-status.status-success {
+  background: #edf9f0;
+  color: #1b5e20;
+  border: 1px solid #cce9d2;
+}
+
+.form-status.status-error {
+  background: #fff3f3;
+  color: #b42318;
+  border: 1px solid #f3c7c7;
+}
+
+.form-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
+}
