@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <title>Portfolio | SpiroTech IT Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Go up one level because this file is inside /portfolio/ -->
+  <link rel="stylesheet" href="../styles.css" />
+
   <style>
     .tags { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
     .tag  { font-size: .8rem; padding:6px 10px; border-radius:999px; background:#0e1820; border:1px solid rgba(0,229,255,.25); color:var(--accent);}
@@ -20,18 +23,18 @@
 <nav class="nav">
   <strong class="brand">SpiroTech IT</strong>
   <div>
-    <a href="index.html" class="active">Home</a>
-    <a href="services/">Services</a>
-    <a href="portfolio/">Portfolio</a>
-    <a href="contact/" class="btn">Request a Quote</a>
+    <a href="../index.html">Home</a>
+    <a href="../services/">Services</a>
+    <a href="../portfolio/" class="active">Portfolio</a>
+    <a href="../contact/" class="btn">Request a Quote</a>
   </div>
 </nav>
 
 <section class="hero">
-  <img src="logo.png" alt="SpiroTech IT Solutions Logo">
-  <h1>Practical IT Solutions</h1>
-  <p>...</p>
-  <a class="btn" href="contact/">Request a Quote</a>
+  <img src="../logo.png" alt="SpiroTech IT Solutions Logo">
+  <h1>Portfolio</h1>
+  <p>Examples of practical IT support, automation, and process improvement solutions.</p>
+  <a class="btn" href="../contact/">Request a Quote</a>
 </section>
 
 <section class="section">
@@ -43,7 +46,7 @@
       <div class="cols">
         <div>
           <p><strong>Problem:</strong> Manual collection and sorting of user responses caused delays and errors.</p>
-          <p><strong>Solution:</strong> Built a Google Apps Script workflow that listens for chatbot triggers (WATI), validates inputs, and auto‑routes rows to the correct tabs.</p>
+          <p><strong>Solution:</strong> Built a Google Apps Script workflow that listens for chatbot triggers (WATI), validates inputs, and auto-routes rows to the correct tabs.</p>
           <p><strong>Outcome:</strong> Hours saved weekly, higher data accuracy, and no double capture.</p>
           <div class="tags">
             <span class="tag">Google Apps Script</span>
@@ -53,7 +56,7 @@
           </div>
         </div>
         <div class="muted">
-          <p><em>Notes:</em> Included error handling & notifications to flag anomalies, plus a readme for hand‑over.</p>
+          <p><em>Notes:</em> Included error handling & notifications to flag anomalies, plus a readme for hand-over.</p>
           <p><em>My role:</em> Design, implementation, test, and documentation.</p>
         </div>
       </div>
@@ -64,7 +67,7 @@
       <h3>Small Business IT Support Stabilisation</h3>
       <div class="cols">
         <div>
-          <p><strong>Problem:</strong> Intermittent printer failures and Wi‑Fi drop‑outs impacting operations.</p>
+          <p><strong>Problem:</strong> Intermittent printer failures and Wi-Fi drop-outs impacting operations.</p>
           <p><strong>Solution:</strong> Driver cleanup, standardized printer queues, router DNS adjustments, and basic device hardening.</p>
           <p><strong>Outcome:</strong> Fewer support incidents, faster startup each day, and traceable documentation.</p>
           <div class="tags">
@@ -87,7 +90,7 @@
         <div>
           <p><strong>Problem:</strong> Duplicates and inconsistent fields made reporting unreliable.</p>
           <p><strong>Solution:</strong> ETL cleanup using Sheets formulas + Apps Script, added validation and import templates.</p>
-          <p><strong>Outcome:</strong> Consistent weekly reports and quicker decision‑making.</p>
+          <p><strong>Outcome:</strong> Consistent weekly reports and quicker decision-making.</p>
           <div class="tags">
             <span class="tag">ETL</span>
             <span class="tag">Validation</span>
