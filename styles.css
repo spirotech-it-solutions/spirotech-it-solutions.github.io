@@ -263,3 +263,165 @@ footer {
 .mt24 { margin-top: 24px; }
 .mt32 { margin-top: 32px; }
 .mt48 { margin-top: 48px; }
+
+/* ===== Homepage trust / positioning sections ===== */
+
+.section-lead {
+  max-width: 760px;
+  margin: 0 auto 18px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.kicker {
+  display: inline-block;
+  margin: 0 auto 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(0, 229, 255, 0.08);
+  border: 1px solid rgba(0, 229, 255, 0.18);
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 24px;
+}
+
+.panel {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.panel h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.panel p,
+.panel li {
+  color: var(--muted);
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.bullets li {
+  margin: 10px 0;
+}
+
+.steps {
+  display: grid;
+  gap: 18px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.step-num {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: #0e1820;
+  border: 1px solid rgba(0,229,255,0.25);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.step h4 {
+  margin: 0 0 6px 0;
+  color: var(--text);
+}
+
+.step p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.highlight {
+  background: linear-gradient(180deg, rgba(0,229,255,0.08), rgba(0,229,255,0.02));
+  border: 1px solid rgba(0,229,255,0.15);
+}
+
+.cta-strip {
+  text-align: center;
+  margin-top: 32px;
+}
+
+/* ===== Mobile nav cleanup ===== */
+@media (max-width: 860px) {
+  .nav {
+    padding: 14px 16px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .brand {
+    text-align: center;
+    font-size: 1.15rem;
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+
+  .nav > div {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 12px;
+    align-items: center;
+  }
+
+  .nav a {
+    margin-left: 0;
+    text-align: center;
+    font-size: 0.98rem;
+    line-height: 1.2;
+  }
+
+  .nav a.active::after {
+    bottom: -4px;
+  }
+
+  .nav a.btn {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .hero {
+    padding: 88px 18px;
+  }
+
+  .hero img {
+    width: clamp(140px, 34vw, 200px);
+    margin-bottom: 22px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    line-height: 1.08;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
