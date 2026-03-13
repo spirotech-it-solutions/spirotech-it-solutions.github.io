@@ -47,6 +47,13 @@
       margin-bottom: 4px;
     }
 
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
     .note {
       color: var(--muted);
       font-size: 0.95rem;
@@ -68,18 +75,20 @@
       <a href="../about/">About</a>
       <a href="../services/">Services</a>
       <a href="../portfolio/">Portfolio</a>
-      <a href="../contact/" class="btn active">Request a Quote</a>
+      <a href="../contact/" class="btn">Request a Quote</a>
     </div>
   </nav>
 
   <section class="hero">
-    <img src="../logo.png" alt="SpiroTech IT Solutions Logo" />
+    <img src="../logo.png" alt="SpiroTech IT Solutions Logo">
     <h1>Request a Quote</h1>
     <p>
       Tell us what you need help with and we’ll get back to you with a practical,
       cost-effective solution.
     </p>
-    <a class="btn" href="mailto:spirotech.solutions@outlook.com?subject=Request%20a%20Quote">Email Us</a>
+    <a class="btn" href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%20Solutions%2C%20I%27d%20like%20to%20request%20a%20quote.">
+      WhatsApp Us
+    </a>
   </section>
 
   <section class="section">
@@ -95,6 +104,18 @@
           </li>
 
           <li>
+            <strong>Mobile</strong>
+            <a href="tel:+27751101718">075 110 1718</a>
+          </li>
+
+          <li>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%20Solutions%2C%20I%27d%20like%20to%20request%20a%20quote." target="_blank" rel="noopener noreferrer">
+              Chat on WhatsApp
+            </a>
+          </li>
+
+          <li>
             <strong>Service Focus</strong>
             IT support, workflow optimisation, automation, consulting, and Microsoft 365 assistance.
           </li>
@@ -105,8 +126,23 @@
           </li>
         </ul>
 
-        <div class="mt24">
-          <a class="btn" href="mailto:spirotech.solutions@outlook.com?subject=Request%20a%20Quote">Send Email</a>
+        <div class="contact-actions">
+          <a class="btn" href="mailto:spirotech.solutions@outlook.com?subject=Request%20a%20Quote">
+            Send Email
+          </a>
+
+          <a class="btn" href="tel:+27751101718">
+            Call Now
+          </a>
+
+          <a
+            class="btn"
+            href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%20Solutions%2C%20I%27d%20like%20to%20request%20a%20quote."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp
+          </a>
         </div>
       </div>
 
