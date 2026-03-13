@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Services | SpiroTech IT Solutions</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Request a Quote | SpiroTech IT Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0A0A0A;
-      color: #FFFFFF;
-    }
-    nav a {
-      color: #00E5FF;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
+    .contact-card { max-width:720px; margin:40px auto; background:var(--panel); border:1px solid rgba(255,255,255,.06); border-radius:12px; padding:28px; }
+    .contact-row { display:grid; grid-template-columns:110px 1fr; gap:12px; margin:12px 0; align-items:center; }
+    @media (max-width:680px){ .contact-row{ grid-template-columns:1fr; } }
+    .copy { font-size:.9rem; color:var(--muted); margin-top:6px; }
   </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Request a Quote</a>
+<nav class="nav">
+  <strong class="brand">SpiroTech IT</strong>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html" class="active">Request a Quote</a>
+  </div>
 </nav>
 
-<section>
-  <h1>Request a Quote</h1>
-  <p>
-    For pricing and availability, please contact us:
-  </p>
+<header class="hero" style="padding:70px 20px;">
+  <h1 class="m0">Request a Quote</h1>
+  <p class="mt8">Tell us briefly what you need — we’ll respond with options that fit your budget.</p>
+</header>
 
-  <p>
-    📧 Email: <a href="mailto:spirotech.solutions@outlook.com">spirotech.solutions@outlook.com</a><br>
-    📱 WhatsApp: <a href="https://wa.me/27751101718">+27 75 110 1718</a>
-  </p>
+<section class="section">
+  <div class="contact-card">
+    <div class="contact-row">
+      <div><strong>Email</strong></div>
+      <div>
+        <a class="btn" href="mailto:spirotech.solutions@outlook.com?subject=Quote%20Request%20-%20SpiroTech%20IT&body=Hi%20SpiroTech%20IT%2C%0A%0ACompany%20name%20(or%20individual)%3A%20%0AService%20needed%3A%20(IT%20Support%20%7C%20Automation%20%7C%20Consulting)%0ADetails%3A%20%0ATiming%3A%20%0ALocation%3A%20%0A%0AThanks!">Email Us</a>
+        <div class="copy">spirotech.solutions@outlook.com</div>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div><strong>WhatsApp</strong></div>
+      <div>
+        <!-- Replace with your preferred number if needed -->
+        <a class="btn" href="https://wa.me/27751101718?text=Hi%20SpiroTech%20IT%2C%20I%27d%20like%20a%20quote.%20Service%3A%20IT%20Support%20%7C%20Automation%20%7C%20Consulting.%20A%20few%20details%3A%20">Chat on WhatsApp</a>
+        <div class="copy">+27 75 110 1718</div>
+      </div>
+    </div>
+
+    <div class="contact-row">
+      <div><strong>Response</strong></div>
+      <div class="copy">We usually reply within business hours (same day). For urgent issues, mention “URGENT” in your message.</div>
+    </div>
+  </div>
 </section>
 
+<footer>© 2026 SpiroTech IT Solutions</footer>
 </body>
 </html>
