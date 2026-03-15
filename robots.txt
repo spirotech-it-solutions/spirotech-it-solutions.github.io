@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spirotech-it-solutions.github.io/sitemap.xml
+Sitemap: https://www.spirotechit.co.za/sitemap.xml
