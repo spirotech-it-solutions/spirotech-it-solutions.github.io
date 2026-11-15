@@ -3,38 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | SpiroTech IT Solutions</title>
-  <meta name="description" content="See examples of SpiroTech IT Solutions projects in IT support, automation, chatbot integrations, and process improvement." />
+  <title>Portfolio &amp; Before/After Solutions | SpiroTech IT Solutions</title>
+  <meta name="description" content="Explore SpiroTech IT Solutions case studies featuring Before &amp; After transformations in IT support, workflow automation, and digital optimization." />
   <link rel="canonical" href="https://www.spirotechit.co.za/portfolio/" />
 
-  <meta property="og:title" content="Portfolio | SpiroTech IT Solutions" />
-  <meta property="og:description" content="See examples of SpiroTech IT Solutions projects in IT support, automation, chatbot integrations, and process improvement." />
+  <meta property="og:title" content="Portfolio &amp; Solutions | SpiroTech IT Solutions" />
+  <meta property="og:description" content="Explore SpiroTech IT Solutions case studies featuring Before &amp; After transformations in IT support, workflow automation, and digital optimization." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.spirotechit.co.za/portfolio/" />
   <meta property="og:image" content="https://www.spirotechit.co.za/logo.png" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Portfolio | SpiroTech IT Solutions" />
-  <meta name="twitter:description" content="See examples of SpiroTech IT Solutions projects in IT support, automation, chatbot integrations, and process improvement." />
-  <meta name="twitter:url" content="https://www.spirotechit.co.za/portfolio/" />
-  <meta name="twitter:image" content="https://www.spirotechit.co.za/logo.png" />
-
   <link rel="icon" type="image/png" href="../logo.png" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="../styles.css" />
 
   <style>
-    .tags { display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
-    .tag  { font-size: .8rem; padding:6px 10px; border-radius:999px; background:#0e1820; border:1px solid rgba(0,229,255,.25); color:var(--accent);}
-    .case { background: var(--panel); border: 1px solid rgba(255,255,255,.06); border-radius: 12px; padding: 24px; }
-    .case h3 { margin-top:0; color: var(--accent); }
-    .cols { display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    @media (max-width: 800px) { .cols { grid-template-columns: 1fr; } }
-    .muted { color: var(--muted); }
+    .ba-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 16px; margin-bottom: 16px; }
+    .ba-box { background: rgba(255,255,255,0.02); border: 1px solid #334155; border-radius: 12px; padding: 20px; }
+    .ba-box.before { border-color: rgba(239, 68, 68, 0.3); }
+    .ba-box.after { border-color: rgba(0, 229, 255, 0.4); background: rgba(0,229,255,0.03); }
+    .ba-title { font-weight: 700; margin-bottom: 8px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .ba-box.before .ba-title { color: #f87171; }
+    .ba-box.after .ba-title { color: var(--accent); }
+    .case-card { background: var(--panel); border: 1px solid rgba(255,255,255,.06); border-radius: 16px; padding: 32px; margin-bottom: 32px; }
+    .case-card h3 { margin-top: 0; color: var(--accent); font-size: 1.4rem; margin-bottom: 12px; }
+    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+    .tag { font-size: .8rem; padding: 6px 12px; border-radius: 999px; background: #0e1820; border: 1px solid rgba(0,229,255,.25); color: var(--accent); }
+    @media (max-width: 768px) { .ba-container { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -53,73 +50,82 @@
 
   <section class="hero">
     <img src="../logo.png" alt="SpiroTech IT Solutions Logo" />
-    <h1>Portfolio</h1>
-    <p>Examples of practical IT support, automation, and process improvement solutions.</p>
+    <h1>Before &amp; After Solutions</h1>
+    <p>See how we transform everyday operational friction, manual chaos, and technical delays into streamlined, automated workflows.</p>
     <a class="btn" href="../contact/">Request a Quote</a>
   </section>
 
-  <section class="section">
-    <div class="grid">
-      <div class="case">
-        <h3>Google Sheets + Chatbot Data Flow</h3>
-        <div class="cols">
-          <div>
-            <p><strong>Problem:</strong> Manual collection and sorting of user responses caused delays and errors.</p>
-            <p><strong>Solution:</strong> Built a Google Apps Script workflow that listens for chatbot triggers (WATI), validates inputs, and auto-routes rows to the correct tabs.</p>
-            <p><strong>Outcome:</strong> Hours saved weekly, higher data accuracy, and no double capture.</p>
-            <div class="tags">
-              <span class="tag">Google Apps Script</span>
-              <span class="tag">Google Sheets</span>
-              <span class="tag">WATI</span>
-              <span class="tag">Zapier</span>
-            </div>
-          </div>
-          <div class="muted">
-            <p><em>Notes:</em> Included error handling &amp; notifications to flag anomalies, plus a readme for hand-over.</p>
-            <p><em>My role:</em> Design, implementation, test, and documentation.</p>
-          </div>
+  <section class="section" style="max-width: 1000px; margin: 0 auto;">
+    
+    <!-- Case 1 -->
+    <div class="case-card">
+      <h3>Automated Client Inquiries &amp; Data Routing</h3>
+      <p style="color: var(--muted); margin-bottom: 20px;">Eliminating manual sorting of incoming client requests and double-entry errors.</p>
+      
+      <div class="ba-container">
+        <div class="ba-box before">
+          <div class="ba-title">Before SpiroTech</div>
+          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Manual collection and sorting of user responses caused weekly delays, missing information, and double-entry mistakes across spreadsheets.</p>
+        </div>
+        <div class="ba-box after">
+          <div class="ba-title">After SpiroTech</div>
+          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Custom workflow integration that listens for client triggers, validates incoming data, and auto-routes rows directly into organized tracking sheets with anomaly alerts.</p>
         </div>
       </div>
 
-      <div class="case">
-        <h3>Small Business IT Support Stabilisation</h3>
-        <div class="cols">
-          <div>
-            <p><strong>Problem:</strong> Intermittent printer failures and Wi-Fi drop-outs impacting operations.</p>
-            <p><strong>Solution:</strong> Driver cleanup, standardized printer queues, router DNS adjustments, and basic device hardening.</p>
-            <p><strong>Outcome:</strong> Fewer support incidents, faster startup each day, and traceable documentation.</p>
-            <div class="tags">
-              <span class="tag">Windows</span>
-              <span class="tag">Networking</span>
-              <span class="tag">M365</span>
-              <span class="tag">Documentation</span>
-            </div>
-          </div>
-          <div class="muted">
-            <p><em>Notes:</em> Added lightweight maintenance checklist and a “when to call” guide for staff.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="case">
-        <h3>Data Cleanup &amp; Reporting</h3>
-        <div class="cols">
-          <div>
-            <p><strong>Problem:</strong> Duplicates and inconsistent fields made reporting unreliable.</p>
-            <p><strong>Solution:</strong> ETL cleanup using Sheets formulas + Apps Script, added validation and import templates.</p>
-            <p><strong>Outcome:</strong> Consistent weekly reports and quicker decision-making.</p>
-            <div class="tags">
-              <span class="tag">ETL</span>
-              <span class="tag">Validation</span>
-              <span class="tag">Reporting</span>
-            </div>
-          </div>
-          <div class="muted">
-            <p><em>Notes:</em> Set up versioned tabs and a simple “revert” process.</p>
-          </div>
-        </div>
+      <div class="tags">
+        <span class="tag">Google Apps Script</span>
+        <span class="tag">Google Sheets</span>
+        <span class="tag">Workflow Automation</span>
       </div>
     </div>
+
+    <!-- Case 2 -->
+    <div class="case-card">
+      <h3>Small Business IT &amp; Printer Stabilisation</h3>
+      <p style="color: var(--muted); margin-bottom: 20px;">Resolving recurring hardware drop-outs, network friction, and morning startup delays.</p>
+      
+      <div class="ba-container">
+        <div class="ba-box before">
+          <div class="ba-title">Before SpiroTech</div>
+          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Intermittent printer failures, unstable Wi-Fi connections, and slow PC startups wasting valuable staff time every morning.</p>
+        </div>
+        <div class="ba-box after">
+          <div class="ba-title">After SpiroTech</div>
+          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Clean driver setups, standardized printer queues, router DNS optimisation, and a simple staff checklist for reliable daily operations.</p>
+        </div>
+      </div>
+
+      <div class="tags">
+        <span class="tag">Windows Support</span>
+        <span class="tag">Network Reliability</span>
+        <span class="tag">Hardware Maintenance</span>
+      </div>
+    </div>
+
+    <!-- Case 3 -->
+    <div class="case-card">
+      <h3>Data Cleanup &amp; Reporting Standardisation</h3>
+      <p style="color: var(--muted); margin-bottom: 20px;">Transforming messy spreadsheets and unverified records into reliable weekly metrics.</p>
+      
+      <div class="ba-container">
+        <div class="ba-box before">
+          <div class="ba-title">Before SpiroTech</div>
+          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Duplicate entries, inconsistent formatting, and manual weekly reporting that delayed business decisions.</p>
+        </div>
+        <div class="ba-box after">
+          <div class="ba-title">After SpiroTech</div>
+          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Automated ETL cleanup using formulas and scripts, strict input validation rules, and clean, consistent weekly reporting templates.</p>
+        </div>
+      </div>
+
+      <div class="tags">
+        <span class="tag">Data Cleanup</span>
+        <span class="tag">Validation Rules</span>
+        <span class="tag">Reporting</span>
+      </div>
+    </div>
+
   </section>
 
   <footer>
