@@ -72,38 +72,36 @@
     <a class="btn" href="contact/">Request a Quote</a>
   </section>
 
-  <section class="section">
-    <h2>Services</h2>
+    <section class="section">
+    <h2>Our Core Solutions</h2>
+    <p class="center" style="max-width: 700px; margin: 0 auto 40px; color: var(--muted);">Engineered to give small businesses clean public visuals, reliable IT support, and seamless workflow automation.</p>
 
-    <div class="grid">
-      <div class="card">
-        <h3>IT Support &amp; Maintenance</h3>
-        <p>
-          Windows troubleshooting, device support, printers, networking,
-          and Microsoft 365 assistance.
-        </p>
+    <style>
+      .bento-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
+      .bento-card { background: var(--panel, #11141a); border: 1px solid #334155; border-radius: 16px; padding: 32px; transition: border-color 0.2s, transform 0.2s; }
+      .bento-card:hover { border-color: var(--accent, #00e5ff); transform: translateY(-2px); }
+      .bento-card.wide { grid-column: span 2; }
+      @media(max-width: 768px) { .bento-grid { grid-template-columns: 1fr; } .bento-card.wide { grid-column: span 1; } }
+    </style>
+
+    <div class="bento-grid">
+      <div class="bento-card wide">
+        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">Web &amp; Social Optimization</h3>
+        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">High-performance website structure, professional public branding, and structured social posting workflows that capture inbound client interest and drive conversions effortlessly.</p>
       </div>
-
-      <div class="card">
-        <h3>Automation &amp; Workflow</h3>
-        <p>
-          Google Sheets automation, chatbot integrations, and process optimisation.
-        </p>
+      <div class="bento-card">
+        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">IT Support</h3>
+        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">Reliable troubleshooting for PCs, printers, networks, and secure device setups so your team stays productive.</p>
       </div>
-
-      <div class="card">
-        <h3>IT Consulting</h3>
-        <p>
-          Cost-effective IT planning and setup for individuals and small
-          businesses.
-        </p>
+      <div class="bento-card">
+        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">Workflow Automation</h3>
+        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">Eliminate manual data re-entry and paperwork bottlenecks by connecting your office systems smoothly.</p>
+      </div>
+      <div class="bento-card wide">
+        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">Practical IT Consulting</h3>
+        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">Cost-effective planning and technical guidance tailored specifically for small business budgets and long-term growth.</p>
       </div>
     </div>
-
-    <p class="center" style="max-width: 800px; margin: 32px auto 0; color: var(--muted);">
-      SpiroTech IT Solutions helps individuals and small businesses solve everyday technology problems,
-      improve workflows, and build practical systems that save time and reduce errors.
-    </p>
   </section>
 
   <section class="section">
