@@ -145,7 +145,80 @@
 
   <section class="section">
     <div class="center">
-      <span class="kicker">How we work</span>
+      <span class="kicker">
+  <!-- Industry Quick-Filter & Case Studies -->
+  <section style="padding: 60px 32px; background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <h2 style="text-align: center; margin-bottom: 12px; color: var(--accent);">Tailored Solutions For Your Industry</h2>
+      <p style="text-align: center; color: var(--muted); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Select your industry below to see how we remove day-to-day friction and unlock your M365 environment.</p>
+      
+      <!-- Industry Filter Buttons -->
+      <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 40px;">
+        <button onclick="showIndustry('accounting')" class="ind-btn active-ind" id="btn-accounting" style="background: var(--panel); border: 1px solid var(--accent); color: var(--text); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">Accountants</button>
+        <button onclick="showIndustry('realestate')" class="ind-btn" id="btn-realestate" style="background: var(--panel); border: 1px solid #334155; color: var(--text); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">Real Estate</button>
+        <button onclick="showIndustry('medical')" class="ind-btn" id="btn-medical" style="background: var(--panel); border: 1px solid #334155; color: var(--text); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">Medical Practices</button>
+        <button onclick="showIndustry('contractors')" class="ind-btn" id="btn-contractors" style="background: var(--panel); border: 1px solid #334155; color: var(--text); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">Contractors</button>
+      </div>
+
+      <!-- Industry Detail Card -->
+      <div id="ind-card" style="background: var(--panel); border: 1px solid #334155; border-radius: 12px; padding: 30px; margin-bottom: 50px;">
+        <h3 id="ind-title" style="color: var(--accent); margin-top: 0; margin-bottom: 12px;">Accountants & Financial Professionals</h3>
+        <p id="ind-desc" style="color: var(--text); line-height: 1.6;">Chasing missing client tax documents, messy shared folders, and secure document sharing worries. We clean up your M365 file structure, set up secure client upload portals, and eliminate repetitive spreadsheet copying.</p>
+      </div>
+
+      <!-- Mini Before & After Case Studies -->
+      <h3 style="text-align: center; margin-bottom: 30px; color: var(--text);">Real Workflow Transformation</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div style="background: var(--panel); border: 1px solid #334155; border-radius: 12px; padding: 24px;">
+          <h4 style="color: var(--accent); margin-top: 0;">Case Study: Document Chaos</h4>
+          <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 12px;"><strong>Before:</strong> Client files scattered across local laptops, causing version conflicts and lost emails.</p>
+          <p style="color: var(--text); font-size: 0.95ln; margin-bottom: 0;"><strong>After:</strong> Unified SharePoint structure with secure access controls and automated backup guidance. Finding a file went from 15 minutes to 5 seconds.</p>
+        </div>
+        <div style="background: var(--panel); border: 1px solid #334155; border-radius: 12px; padding: 24px;">
+          <h4 style="color: var(--accent); margin-top: 0;">Case Study: Manual Data Entry</h4>
+          <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 12px;"><strong>Before:</strong> Staff re-typing client inquiry details from emails into spreadsheets every afternoon.</p>
+          <p style="color: var(--text); font-size: 0.95ln; margin-bottom: 0;"><strong>After:</strong> Built-in M365 form and sheet automation capturing data instantly with built-in sanity checks—saving 6+ hours weekly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const industryData = {
+      accounting: {
+        title: "Accountants & Financial Professionals",
+        desc: "Chasing missing client tax documents, messy shared folders, and secure document sharing worries. We clean up your M365 file structure, set up secure client upload portals, and eliminate repetitive spreadsheet copying."
+      },
+      realestate: {
+        title: "Real Estate Agencies",
+        desc: "Slow lead response times and property documents scattered across agent laptops. We centralize client records, secure mobile access, and streamline enquiry routing so you never miss a buyer."
+      },
+      medical: {
+        title: "Medical & Health Practices",
+        desc: "Strict patient data privacy compliance worries, appointment bottlenecks, and admin overhead. We harden your device security, structure patient intake forms securely, and streamline front-desk workflows."
+      },
+      contractors: {
+        title: "Contractors & Builders",
+        desc: "Disconnected field-to-office communication, delayed quotes, and lost paperwork. We set up reliable cloud document sharing and quick quoting templates that work seamlessly on-site or in the office."
+      }
+    };
+
+    function showIndustry(key) {
+      document.querySelectorAll('.ind-btn').forEach(b => {
+        b.style.borderColor = '#334155';
+        b.classList.remove('active-ind');
+      });
+      const activeBtn = document.getElementById('btn-' + key);
+      activeBtn.style.borderColor = 'var(--accent)';
+      activeBtn.classList.add('active-ind');
+
+      document.getElementById('ind-title').innerText = industryData[key].title;
+      document.getElementById('ind-desc').innerText = industryData[key].desc;
+    }
+  </script>
+
+
+  How we work</span>
     </div>
     <h2>Support Options That Fit Your Needs</h2>
     <p class="section-lead">
