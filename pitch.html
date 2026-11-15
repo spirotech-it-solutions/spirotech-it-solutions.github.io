@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpiroTech IT Solutions - Pitch Deck</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.15);
+            --border: #334155;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+        .deck-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .deck-header h1 {
+            color: var(--accent);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        .slide-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+            position: relative;
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .slide-number {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            background: var(--border);
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+        .slide-title {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .slide-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--text-main);
+            flex-grow: 1;
+        }
+        .slide-content ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .slide-content li {
+            margin-bottom: 12px;
+        }
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .nav-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+        }
+        button {
+            background-color: var(--accent);
+            color: #0f172a;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: opacity 0.2s, transform 0.1s;
+        }
+        button:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+        button:disabled {
+            background-color: var(--border);
+            color: var(--text-muted);
+            cursor: not-allowed;
+            transform: none;
+        }
+        .progress-dots {
+            display: flex;
+            gap: 8px;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--border);
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .dot.active {
+            background-color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="deck-header">
+        <h1>SpiroTech IT Solutions — Investor & Client Pitch</h1>
+    </div>
+
+    <div class="slide-card" id="slideCard">
+        <div class="slide-number" id="slideNum">Slide 1 of 6</div>
+        <div>
+            <h2 class="slide-title" id="slideTitle">The Everyday Frustration</h2>
+            <div class="slide-content" id="slideText">
+                Loading...
+            </div>
+        </div>
+        
+        <div class="nav-controls">
+            <button id="prevBtn" onclick="changeSlide(-1)" disabled>Previous</button>
+            <div class="progress-dots" id="dotsContainer"></div>
+            <button id="nextBtn" onclick="changeSlide(1)">Next</button>
+        </div>
+    </div>
+</div>
+
+<script>
+const slides = [
+    {
+        title: "The Everyday Frustration",
+        content: `
+            <p style="font-size: 1.3rem; margin-bottom: 20px; color: #f1f5f9;"><span class="highlight">Are you running your business, or are you fighting your computers?</span></p>
+            <p><strong>The Reality:</strong> Small business owners spend hours every week dealing with crashing PCs, printers that refuse to print, lost files, and re-typing the same information across different programs.</p>
+            <p style="margin-top: 15px;"><strong>How Money Slips Through the Cracks:</strong></p>
+            <ul>
+                <li><strong>Delayed Invoicing:</strong> Paperwork and timesheets sit on a desk instead of billing clients.</li>
+                <li><strong>Lost Leads:</strong> Inquiry emails sit unorganized while a competitor responds first.</li>
+                <li><strong>Wasted Payroll:</strong> Highly paid staff doing manual copy-pasting instead of core work.</li>
+            </ul>
+        `
+    },
+    {
+        title: "Industry-Specific Headaches We Solve",
+        content: `
+            <p style="margin-bottom: 15px;">Tailored operational relief for professional service verticals:</p>
+            <ul>
+                <li><strong>Accountants:</strong> Chasing missing tax docs, messy spreadsheets, and secure document sharing worries.</li>
+                <li><strong>Real Estate Agencies:</strong> Slow lead response times, property documents scattered across agent laptops.</li>
+                <li><strong>Medical Practices:</strong> Strict privacy compliance worries, appointment bottlenecks, and admin overhead.</li>
+                <li><strong>Contractors & Builders:</strong> Disconnected field-to-office communication, delayed quotes, and lost paperwork.</li>
+            </ul>
+        `
+    },
+    {
+        title: "The Solution & The Software Reality",
+        content: `
+            <p><strong>What We Do:</strong> We make your technology work <em>for</em> you, not against you—bridging everyday tech support with practical workflow improvements.</p>
+            <p style="margin-top: 15px;"><strong>The M365 / Workspace Sweet Spot:</strong> Most businesses already pay for Microsoft 365 or Google Workspace but use only a fraction of what they offer. We unlock those built-in tools without expensive third-party add-on apps.</p>
+            <p style="margin-top: 15px;"><strong>Respecting Your Budget:</strong> If your current tier is too basic, we show the exact ROI of upgrading a single tier versus buying standalone software. If budget is tight, we work strictly within what you already own.</p>
+        `
+    },
+    {
+        title: "Why Work With SpiroTech? (Our Selling Points)",
+        content: `
+            <ul>
+                <li><strong>1. Plain Business Language & Honest Scope:</strong> We speak human, not tech jargon. If an issue is outside our core skill set (like specialized industry software), we manage the right vendor or recommend specialists.</li>
+                <li><strong>2. Plumbing + Room Layout:</strong> Traditional IT only fixes the "plumbing" (devices, Wi-Fi) and leaves. We fix the plumbing <em>and</em> help layout the rooms better by removing daily administrative friction.</li>
+                <li><strong>3. We Teach You and Leave:</strong> We don't create permanent dependency. We set up clean systems, train your staff, and leave you with complete peace of mind.</li>
+            </ul>
+        `
+    },
+    {
+        title: "When Do You See Results? (Time-to-Value)",
+        content: `
+            <ul>
+                <li><strong>Day 1 (Immediate Relief):</strong> Printers work, computers run fast, accounts secure, team stops panicking over tech glitches.</li>
+                <li><strong>Week 1 to 2 (Time Savings):</strong> Elimination of manual paper-pushing. Client info flows directly where needed, saving <strong>5 to 15 hours every week</strong>.</li>
+                <li><strong>Month 1 & Beyond (Sustainable Growth):</strong> Automations launched with <strong>built-in human sanity checks</strong>. Teams gain capacity to handle <strong>20% to 30% more clients</strong> without hiring extra admin staff.</li>
+            </ul>
+        `
+    },
+    {
+        title: "Simple Ways We Partner",
+        content: `
+            <ol style="padding-left: 20px;">
+                <li style="margin-bottom: 15px;"><strong>The Once-Off Fix:</strong> Practical help when hardware breaks, Wi-Fi drops, printers misbehave, or email sync fails.</li>
+                <li style="margin-bottom: 15px;"><strong>The Cleanup Project:</strong> Organizing messy document folders, setting up secure sharing, and automating repetitive office paperwork.</li>
+                <li><strong>Ongoing Peace of Mind:</strong> Having a reliable, go-to tech partner on call whenever your business needs support.</li>
+            </ol>
+        `
+    }
+];
+
+let currentSlide = 0;
+
+function updateSlide() {
+    document.getElementById('slideNum').innerText = `Slide ${currentSlide + 1} of ${slides.length}`;
+    document.getElementById('slideTitle').innerText = slides[currentSlide].title;
+    document.getElementById('slideText').innerHTML = slides[currentSlide].content;
+    
+    document.getElementById('prevBtn').disabled = currentSlide === 0;
+    document.getElementById('nextBtn').disabled = currentSlide === slides.length - 1;
+    
+    renderDots();
+}
+
+function changeSlide(direction) {
+    currentSlide += direction;
+    if (currentSlide < 0) currentSlide = 0;
+    if (currentSlide >= slides.length) currentSlide = currentNav => slides.length - 1;
+    updateSlide();
+}
+
+function goToSlide(index) {
+    currentSlide = index;
+    updateSlide();
+}
+
+function renderDots() {
+    const container = document.getElementById('dotsContainer');
+    container.innerHTML = '';
+    slides.forEach((_, idx) => {
+        const dot = document.createElement('div');
+        dot.className = `dot ${idx === currentSlide ? 'active' : ''}`;
+        dot.onclick = () => goToSlide(idx);
+        container.appendChild(dot);
+    });
+}
+
+updateSlide();
+</script>
+
+</body>
+</html>
