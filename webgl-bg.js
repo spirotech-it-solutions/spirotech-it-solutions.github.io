@@ -155,6 +155,11 @@
   }
 
   function initWebGLBackground() {
+    // Check if mobile device / narrow viewport (e.g., width < 768px) to skip WebGL rendering and save battery/prevent lag
+    if (window.innerWidth < 768) {
+      return;
+    }
+
     const canvas = document.createElement('canvas');
     canvas.id = 'webgl-bg';
     canvas.style.cssText = `
