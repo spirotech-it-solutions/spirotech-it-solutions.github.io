@@ -1,3 +1,25 @@
+:root {
+  --bg: #0b0d10;
+  --panel: #11141a;
+  --text: #eaeaea;
+  --muted: #9ca3af;
+  --accent: #00e5ff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
 /* Top Bar & Nav */
 .top-bar {
   background: var(--panel);
