@@ -1,96 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | SpiroTech IT Solutions</title>
-  <meta name="description" content="Explore SpiroTech IT Solutions services including IT support, Microsoft 365 assistance, automation, workflow optimisation, and consulting." />
-  <link rel="canonical" href="https://www.spirotechit.co.za/services/" />
-
-  <meta property="og:title" content="Services | SpiroTech IT Solutions" />
-  <meta property="og:description" content="Explore SpiroTech IT Solutions services including IT support, Microsoft 365 assistance, automation, workflow optimisation, and consulting." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.spirotechit.co.za/services/" />
-  <meta property="og:image" content="https://www.spirotechit.co.za/logo.png" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Services | SpiroTech IT Solutions" />
-  <meta name="twitter:description" content="Explore SpiroTech IT Solutions services including IT support, Microsoft 365 assistance, automation, workflow optimisation, and consulting." />
-  <meta name="twitter:url" content="https://www.spirotechit.co.za/services/" />
-  <meta name="twitter:image" content="https://www.spirotechit.co.za/logo.png" />
-
-  <link rel="icon" type="image/png" href="../logo.png" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Managed Services | SpiroTech IT Solutions</title>
+  <link rel="stylesheet" href="../styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="../styles.css" />
-
-    
-  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
 <body>
 
-  <nav class="nav">
-    <strong class="brand">SpiroTech IT</strong>
-    <div>
-      <a href="../index.html">Home</a>
-      <a href="../about/">About</a>
-      <a href="../services/" class="active">Services</a>
-      <a href="../portfolio/">Portfolio</a>
-      <a href="/pitch.html">For You</a>
-      <a href="../contact/" class="btn">Request a Quote</a>
+  <!-- Top Enterprise Header -->
+  <header class="nvidia-header">
+    <div class="nvidia-top-nav">
+      <div class="nav-container">
+        <a href="../index.html" class="nvidia-logo">
+          <div class="logo-mark">ST</div>
+          <span class="logo-text">SPIROTECH IT</span>
+        </a>
+        <nav class="nvidia-nav-links" id="navLinks">
+          <a href="../index.html">Solutions</a>
+          <a href="index.html" class="active">Managed IT</a>
+          <a href="../portfolio/index.html">Hardware & AI</a>
+          <a href="../about/index.html">Company</a>
+          <a href="../contact/index.html">Contact</a>
+        </nav>
+        <div class="nvidia-nav-actions">
+          <a href="../contact/index.html" class="nvidia-btn-accent">Client Portal</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+        </div>
+      </div>
     </div>
-  </nav>
-
-  <section class="hero">
-    <img src="../logo.svg" style="width: 360px; height: auto; display: block; margin: 0 auto 16px; mix-blend-mode: screen;" alt="SpiroTech IT Solutions Logo" />
-    <h1>Our Services</h1>
-    <p>
-      Practical, reliable IT solutions for individuals and small businesses —
-      from day-to-day support to automation and process improvement.
-    </p>
-    <a class="btn" href="../contact/">Request a Quote</a>
-  </section>
-
-  <section class="section">
-    <h2>What We Offer</h2>
-
-      <section class="section">
-    <h2>Our Core Solutions</h2>
-    <p class="center" style="max-width: 700px; margin: 0 auto 40px; color: var(--muted);">Engineered to give small businesses clean public visuals, reliable IT support, and seamless workflow automation.</p>
-
-    <style>
-      .bento-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
-      .bento-card { background: var(--panel, #11141a); border: 1px solid #334155; border-radius: 16px; padding: 32px; }
-      .bento-card:hover { border-color: #334155; }
-      .bento-card.wide { grid-column: span 2; }
-      @media(max-width: 768px) { .bento-grid { grid-template-columns: 1fr; } .bento-card.wide { grid-column: span 1; } }
-    </style>
-
-    <div class="bento-grid">
-      <div class="bento-card wide">
-        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">Web &amp; Social Optimization</h3>
-        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">High-performance website structure, professional public branding, and structured social posting workflows that capture inbound client interest and drive conversions effortlessly.</p>
+    <div class="nvidia-sub-nav">
+      <div class="sub-nav-content nav-container">
+        <span class="sub-nav-title">MANAGED SERVICES PORTFOLIO</span>
+        <div class="sub-nav-links">
+          <a href="#helpdesk">Helpdesk Support</a>
+          <a href="#cloud">Cloud Solutions</a>
+          <a href="#security">Cybersecurity</a>
+        </div>
       </div>
-      <div class="bento-card">
-        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">IT Support</h3>
-        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">Reliable troubleshooting for PCs, printers, networks, and secure device setups so your team stays productive.</p>
-      </div>
-      <div class="bento-card">
-        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">Workflow Automation</h3>
-        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">Eliminate manual data re-entry and paperwork bottlenecks by connecting your office systems smoothly.</p>
-      </div>
-      <div class="bento-card wide">
-        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">Practical IT Consulting</h3>
-        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">Cost-effective planning and technical guidance tailored specifically for small business budgets and long-term growth.</p>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="nvidia-hero">
+    <div class="hero-container">
+      <div class="hero-badge">Enterprise IT Support & Management</div>
+      <h1>Comprehensive <span>Managed IT Services</span> for Modern Businesses</h1>
+      <p>Proactive IT management, rapid helpdesk resolution, robust cloud infrastructure, and enterprise-grade security tailored for your organization.</p>
+      <div class="hero-cta-row">
+        <a href="../contact/index.html" class="btn btn-green">Request Service SLA</a>
+        <a href="../index.html" class="btn btn-outline">Back to Home</a>
       </div>
     </div>
   </section>
 
-<footer>
-    © 2026 SpiroTech IT Solutions
+  <!-- Services Grid -->
+  <section class="nvidia-section alt-dark" id="helpdesk">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Core IT Capabilities</h2>
+        <p>Reliable technology solutions designed to minimize downtime and maximize productivity.</p>
+      </div>
+
+      <div class="nvidia-grid">
+        <div class="nvidia-card">
+          <div>
+            <div class="card-tag">Support</div>
+            <h3>24/7 Helpdesk & Remote Support</h3>
+            <p>Immediate troubleshooting and expert technical assistance for workstations, servers, and business applications.</p>
+          </div>
+          <a href="../contact/index.html" class="card-link">Get Support →</a>
+        </div>
+
+        <div class="nvidia-card">
+          <div>
+            <div class="card-tag">Cloud</div>
+            <h3>Cloud Infrastructure & Backup</h3>
+            <p>Secure cloud migration, Microsoft 365 administration, and automated immutable disaster recovery backups.</p>
+          </div>
+          <a href="../contact/index.html" class="card-link">Explore Cloud →</a>
+        </div>
+
+        <div class="nvidia-card">
+          <div>
+            <div class="card-tag">Security</div>
+            <h3>Cybersecurity & Compliance</h3>
+            <p>Next-gen endpoint detection, firewall management, vulnerability scanning, and employee security awareness training.</p>
+          </div>
+          <a href="../contact/index.html" class="card-link">Secure Network →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="nvidia-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <strong>SpiroTech IT Solutions</strong>
+        <p>Proactive IT management and enterprise cybersecurity.</p>
+        <p>Email: support@spirotechit.co.za</p>
+      </div>
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <a href="index.html">Managed IT</a>
+        <a href="../portfolio/index.html">Hardware & AI</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="../about/index.html">About Us</a>
+        <a href="../contact/index.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="../about/index.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 SpiroTech IT Solutions. All rights reserved.
+    </div>
   </footer>
 
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const links = document.getElementById('navLinks');
+    if(toggle && links) {
+      toggle.addEventListener('click', () => { links.classList.toggle('show'); });
+    }
+  </script>
 </body>
 </html>
