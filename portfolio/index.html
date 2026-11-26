@@ -1,138 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio &amp; Before/After Solutions | SpiroTech IT Solutions</title>
-  <meta name="description" content="Explore SpiroTech IT Solutions case studies featuring Before &amp; After transformations in IT support, workflow automation, and digital optimization." />
-  <link rel="canonical" href="https://www.spirotechit.co.za/portfolio/" />
-
-  <meta property="og:title" content="Portfolio &amp; Solutions | SpiroTech IT Solutions" />
-  <meta property="og:description" content="Explore SpiroTech IT Solutions case studies featuring Before &amp; After transformations in IT support, workflow automation, and digital optimization." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.spirotechit.co.za/portfolio/" />
-  <meta property="og:image" content="https://www.spirotechit.co.za/logo.png" />
-
-  <link rel="icon" type="image/png" href="../logo.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hardware & Solutions Portfolio | SpiroTech IT Solutions</title>
+  <link rel="stylesheet" href="../styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles.css" />
-
-    
-
-    <style>
-    .ba-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 16px; margin-bottom: 16px; }
-    .ba-box { background: rgba(255,255,255,0.02); border: 1px solid #334155; border-radius: 12px; padding: 20px; }
-    .ba-box.before { border-color: rgba(239, 68, 68, 0.3); }
-    .ba-box.after { border-color: rgba(0, 229, 255, 0.4); background: rgba(0,229,255,0.03); }
-    .ba-title { font-weight: 700; margin-bottom: 8px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .ba-box.before .ba-title { color: #f87171; }
-    .ba-box.after .ba-title { color: var(--accent); }
-    .case-card { background: var(--panel); border: 1px solid rgba(255,255,255,.06); border-radius: 16px; padding: 32px; margin-bottom: 32px; }
-    .case-card h3 { margin-top: 0; color: var(--accent); font-size: 1.4rem; margin-bottom: 12px; }
-    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
-    .tag { font-size: .8rem; padding: 6px 12px; border-radius: 999px; background: #0e1820; border: 1px solid rgba(0,229,255,.25); color: var(--accent); }
-    @media (max-width: 768px) { .ba-container { grid-template-columns: 1fr; } }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="nav">
-    <strong class="brand">SpiroTech IT</strong>
-    <div>
-      <a href="../index.html">Home</a>
-      <a href="../about/">About</a>
-      <a href="../services/">Services</a>
-      <a href="../portfolio/" class="active">Portfolio</a>
-      <a href="/pitch.html">For You</a>
-      <a href="../contact/" class="btn">Request a Quote</a>
+  <header class="nvidia-header">
+    <div class="nvidia-top-nav">
+      <div class="nav-container">
+        <a href="../index.html" class="nvidia-logo">
+          <div class="logo-mark">ST</div>
+          <span class="logo-text">SPIROTECH IT</span>
+        </a>
+        <nav class="nvidia-nav-links" id="navLinks">
+          <a href="../index.html">Solutions</a>
+          <a href="../services/index.html">Managed IT</a>
+          <a href="index.html" class="active">Hardware & AI</a>
+          <a href="../about/index.html">Company</a>
+          <a href="../contact/index.html">Contact</a>
+        </nav>
+        <div class="nvidia-nav-actions">
+          <a href="../contact/index.html" class="nvidia-btn-accent">Client Portal</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+        </div>
+      </div>
     </div>
-  </nav>
+  </header>
 
-  <section class="hero">
-    <img src="../logo.svg" style="width: 360px; height: auto; display: block; margin: 0 auto 16px; mix-blend-mode: screen;" alt="SpiroTech IT Solutions Logo" />
-    <h1>Before &amp; After Solutions</h1>
-    <p>See how we transform everyday operational friction, manual chaos, and technical delays into streamlined, automated workflows.</p>
-    <a class="btn" href="../contact/">Request a Quote</a>
+  <section class="nvidia-hero">
+    <div class="hero-container">
+      <div class="hero-badge">Hardware & Infrastructure Portfolio</div>
+      <h1>Enterprise Hardware & <span>Client Solutions</span></h1>
+      <p>Explore our proven track record in deploying high-reliability server hardware, custom business workstations, and secure network infrastructure.</p>
+      <div class="hero-cta-row">
+        <a href="../contact/index.html" class="btn btn-green">Request Hardware Quote</a>
+        <a href="../index.html" class="btn btn-outline">Back to Home</a>
+      </div>
+    </div>
   </section>
 
-  <section class="section" style="max-width: 1000px; margin: 0 auto;">
-    
-    <!-- Case 1 -->
-    <div class="case-card">
-      <h3>Automated Client Inquiries &amp; Data Routing</h3>
-      <p style="color: var(--muted); margin-bottom: 20px;">Eliminating manual sorting of incoming client requests and double-entry errors.</p>
-      
-      <div class="ba-container">
-        <div class="ba-box before">
-          <div class="ba-title">Before SpiroTech</div>
-          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Manual collection and sorting of user responses caused weekly delays, missing information, and double-entry mistakes across spreadsheets.</p>
-        </div>
-        <div class="ba-box after">
-          <div class="ba-title">After SpiroTech</div>
-          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Custom workflow integration that listens for client triggers, validates incoming data, and auto-routes rows directly into organized tracking sheets with anomaly alerts.</p>
-        </div>
+  <section class="nvidia-section alt-dark">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Deployed Solutions & Case Studies</h2>
+        <p>Real-world implementations delivering high availability and peak performance for clients.</p>
       </div>
 
-      <div class="tags">
-        <span class="tag">Google Apps Script</span>
-        <span class="tag">Google Sheets</span>
-        <span class="tag">Workflow Automation</span>
+      <div class="nvidia-grid">
+        <div class="nvidia-card">
+          <div>
+            <div class="card-tag">Server Infrastructure</div>
+            <h3>High-Availability Virtualization Clusters</h3>
+            <p>Designed and deployed fault-tolerant Proxmox/Hyper-V server clusters with automated failover and offsite replication for enterprise clients.</p>
+          </div>
+          <a href="../contact/index.html" class="card-link">Learn More →</a>
+        </div>
+
+        <div class="nvidia-card">
+          <div>
+            <div class="card-tag">Workstation Builds</div>
+            <h3>Custom Engineering & CAD Rigs</h3>
+            <p>High-performance client workstations engineered for intensive CAD rendering, data analysis, and professional multi-display workflows.</p>
+          </div>
+          <a href="../contact/index.html" class="card-link">View Specs →</a>
+        </div>
+
+        <div class="nvidia-card">
+          <div>
+            <div class="card-tag">Network Architecture</div>
+            <h3>Secure Multi-Site VPN & Firewalls</h3>
+            <p>Enterprise-grade site-to-site VPN routing, VLAN segmentation, and unified threat management firewalls.</p>
+          </div>
+          <a href="../contact/index.html" class="card-link">Secure Network →</a>
+        </div>
       </div>
     </div>
-
-    <!-- Case 2 -->
-    <div class="case-card">
-      <h3>Small Business IT &amp; Printer Stabilisation</h3>
-      <p style="color: var(--muted); margin-bottom: 20px;">Resolving recurring hardware drop-outs, network friction, and morning startup delays.</p>
-      
-      <div class="ba-container">
-        <div class="ba-box before">
-          <div class="ba-title">Before SpiroTech</div>
-          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Intermittent printer failures, unstable Wi-Fi connections, and slow PC startups wasting valuable staff time every morning.</p>
-        </div>
-        <div class="ba-box after">
-          <div class="ba-title">After SpiroTech</div>
-          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Clean driver setups, standardized printer queues, router DNS optimisation, and a simple staff checklist for reliable daily operations.</p>
-        </div>
-      </div>
-
-      <div class="tags">
-        <span class="tag">Windows Support</span>
-        <span class="tag">Network Reliability</span>
-        <span class="tag">Hardware Maintenance</span>
-      </div>
-    </div>
-
-    <!-- Case 3 -->
-    <div class="case-card">
-      <h3>Data Cleanup &amp; Reporting Standardisation</h3>
-      <p style="color: var(--muted); margin-bottom: 20px;">Transforming messy spreadsheets and unverified records into reliable weekly metrics.</p>
-      
-      <div class="ba-container">
-        <div class="ba-box before">
-          <div class="ba-title">Before SpiroTech</div>
-          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Duplicate entries, inconsistent formatting, and manual weekly reporting that delayed business decisions.</p>
-        </div>
-        <div class="ba-box after">
-          <div class="ba-title">After SpiroTech</div>
-          <p style="color: var(--text); font-size: 0.95rem; margin: 0; line-height: 1.5;">Automated ETL cleanup using formulas and scripts, strict input validation rules, and clean, consistent weekly reporting templates.</p>
-        </div>
-      </div>
-
-      <div class="tags">
-        <span class="tag">Data Cleanup</span>
-        <span class="tag">Validation Rules</span>
-        <span class="tag">Reporting</span>
-      </div>
-    </div>
-
   </section>
 
-  <footer>
-    © 2026 SpiroTech IT Solutions
+  <footer class="nvidia-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <strong>SpiroTech IT Solutions</strong>
+        <p>Enterprise hardware deployment and network architecture.</p>
+        <p>Email: support@spirotechit.co.za</p>
+      </div>
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <a href="../services/index.html">Managed IT</a>
+        <a href="index.html">Hardware & AI</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="../about/index.html">About Us</a>
+        <a href="../contact/index.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="../about/index.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 SpiroTech IT Solutions. All rights reserved.
+    </div>
   </footer>
 
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const links = document.getElementById('navLinks');
+    if(toggle && links) { toggle.addEventListener('click', () => { links.classList.toggle('show'); }); }
+  </script>
 </body>
 </html>
