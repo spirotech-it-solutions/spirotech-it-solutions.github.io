@@ -1,9 +1,13 @@
 :root {
-  --bg: #0b0d10;
-  --panel: #11141a;
-  --text: #eaeaea;
-  --muted: #9ca3af;
-  --accent: #00e5ff;
+  --bg: #FFFFFF;
+  --panel: #F8FAFC;
+  --text: #111827;
+  --muted: #4B5563;
+  --accent: #0066FF;
+  --accent-hover: #0052CC;
+  --border: #E5E7EB;
+  --card-bg: #FFFFFF;
+  --highlight-yellow: #FEF08A;
 }
 
 * { box-sizing: border-box; }
