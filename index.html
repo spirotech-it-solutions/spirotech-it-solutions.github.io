@@ -3,33 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SpiroTech IT Solutions | IT Support, Automation &amp; Workflow</title>
-  <meta name="description" content="SpiroTech IT Solutions provides practical IT support, Microsoft 365 help, automation, workflow optimisation, and consulting for individuals and small businesses." />
+  <title>IT Support Pretoria &amp; Remote SA | SpiroTech IT Solutions</title>
+  <meta name="description" content="IT that just works, so your small business can too. Practical IT support, Microsoft 365 support, workflow optimisations, and consulting in Pretoria and remote across South Africa." />
   <link rel="canonical" href="https://www.spirotechit.co.za/" />
 
-  <meta property="og:title" content="SpiroTech IT Solutions | IT Support, Automation &amp; Workflow" />
-  <meta property="og:description" content="Practical IT support, Microsoft 365 help, automation, workflow optimisation, and consulting for individuals and small businesses." />
+  <meta property="og:title" content="IT Support Pretoria &amp; Remote SA | SpiroTech IT Solutions" />
+  <meta property="og:description" content="IT that just works, so your small business can too. Practical IT support, Microsoft 365 support, workflow optimisations, and consulting." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.spirotechit.co.za/" />
   <meta property="og:image" content="https://www.spirotechit.co.za/logo.png" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SpiroTech IT Solutions | IT Support, Automation &amp; Workflow" />
-  <meta name="twitter:description" content="Practical IT support, Microsoft 365 help, automation, workflow optimisation, and consulting for individuals and small businesses." />
-  <meta name="twitter:url" content="https://www.spirotechit.co.za/" />
-  <meta name="twitter:image" content="https://www.spirotechit.co.za/logo.png" />
 
   <link rel="icon" type="image/png" href="logo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+  <script src="webgl-bg.js" defer></script>
 
-    <script src="webgl-bg.js" defer></script>
-
-    <script type="application/ld+json">
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -38,6 +31,7 @@
     "logo": "https://www.spirotechit.co.za/logo.png",
     "email": "spirotech.solutions@outlook.com",
     "telephone": "+27 75 110 1718",
+    "areaServed": ["Pretoria", "South Africa"],
     "contactPoint": [
       {
         "@type": "ContactPoint",
@@ -52,131 +46,155 @@
 </head>
 <body>
 
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <span>📍 Serving Pretoria &amp; Remote across South Africa</span>
+    <span>📞 <a href="tel:+27751101718">+27 75 110 1718</a> &nbsp;|&nbsp; ✉️ <a href="mailto:spirotech.solutions@outlook.com">spirotech.solutions@outlook.com</a></span>
+  </div>
+
   <nav class="nav">
-    <strong class="brand">SpiroTech IT</strong>
-    <div>
+    <a href="index.html" class="brand-link" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text);">
+      <img src="logo.svg" alt="SpiroTech" style="height: 32px; width: auto;" />
+      <strong class="brand">SpiroTech IT</strong>
+    </a>
+    <div class="nav-links" id="navLinks">
       <a href="index.html" class="active">Home</a>
       <a href="about/">About</a>
       <a href="services/">Services</a>
       <a href="portfolio/">Portfolio</a>
       <a href="pitch.html">For You</a>
-      <a href="contact/" class="btn">Request a Quote</a>
+      <a href="contact/" class="btn-quote">Request a Quote</a>
     </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
   </nav>
 
   <section class="hero">
-    <img src="logo.svg" alt="SpiroTech IT Solutions Logo" style="width: 360px; height: auto; display: block; margin: 0 auto 16px; mix-blend-mode: screen;" />
-    <h1>SpiroTech IT Solutions</h1>
-    <p>
-      Practical IT support, Microsoft 365 support, workflow optimisations or automations, consulting for individuals and small businesses.
-    </p>
-    <a class="btn" href="contact/">Request a Quote</a>
-  </section>
-
-    <section class="section">
-    <h2>Our Core Solutions</h2>
-    <p class="center" style="max-width: 700px; margin: 0 auto 40px; color: var(--muted);">Established to help small businesses present a polished, professional image while providing reliable IT support and seamless workflow automation tailored to their unique needs.</p>
-
-    <style>
-      .bento-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
-      .bento-card { background: var(--panel, #11141a); border: 1px solid #334155; border-radius: 16px; padding: 32px; }
-      .bento-card:hover { border-color: #334155; }
-      .bento-card.wide { grid-column: span 2; }
-      @media(max-width: 768px) { .bento-grid { grid-template-columns: 1fr; } .bento-card.wide { grid-column: span 1; } }
-    </style>
-
-    <div class="bento-grid">
-      <div class="bento-card wide">
-        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">Web &amp; Social Optimization</h3>
-        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">High-performance website structure, professional public branding, and structured social posting workflows that capture inbound client interest and drive conversions effortlessly.</p>
+    <div class="hero-content">
+      <div class="trust-pill"><span>Microsoft 365 Specialists</span> · <span>Remote &amp; On-site</span> · <span>Pretoria &amp; SA</span></div>
+      <h1>IT that just works, so your small business can too.</h1>
+      <p>
+        Practical IT support, Microsoft 365 support, workflow optimisations, and consulting for individuals and small businesses.
+      </p>
+      <div class="hero-cta-group">
+        <a class="btn btn-primary" href="https://wa.me/27751101718?text=Hi%20SpiroTech,%20I'd%20like%20to%20book%20a%20free%2015-minute%20IT%20health%20check." target="_blank">Book a Free 15-Min IT Health Check</a>
+        <a class="btn btn-secondary" href="contact/">Request a Quote</a>
       </div>
-      <div class="bento-card">
-        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">IT Support</h3>
-        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">Reliable troubleshooting for PCs, printers, networks, and secure device setups so your team stays productive.</p>
-      </div>
-      <div class="bento-card">
-        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">Workflow Automation</h3>
-        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">Eliminate manual data re-entry and paperwork bottlenecks by connecting your office systems smoothly.</p>
-      </div>
-      <div class="bento-card wide">
-        <h3 style="color: var(--accent, #00e5ff); margin-top: 0; margin-bottom: 12px; font-size: 1.4rem;">Practical IT Consulting</h3>
-        <p style="color: var(--text, #eaeaea); line-height: 1.6; margin: 0;">Cost-effective planning and technical guidance tailored specifically for small business budgets and long-term growth.</p>
+      <div class="hero-subinfo">
+        <span>Once-off support from <strong>R450/hour</strong></span>
+        <span>•</span>
+        <span>Monthly support plans from <strong>R1,500/month</strong></span>
       </div>
     </div>
   </section>
 
+  <!-- Core Solutions (Even 2x2 Bento Grid) -->
   <section class="section">
     <div class="center">
-      <span class="kicker">Why choose us</span>
+      <span class="kicker">Core Solutions</span>
+      <h2>What We Do Best</h2>
+      <p class="section-lead">Clear, reliable technology solutions designed for small business realities.</p>
     </div>
-    <h2>Why SpiroTech?</h2>
-    <p class="section-lead">
-      Practical support, smarter workflows, and clear guidance for individuals and
-      small businesses that need technology to work properly without unnecessary complexity.
-    </p>
+
+    <div class="bento-grid">
+      <div class="bento-card">
+        <div class="card-icon">🌐</div>
+        <h3>Professional Email, Domains &amp; Web Presence</h3>
+        <p>Reliable domain setup, professional email routing, and clean website maintenance that presents a polished, trustworthy image to your clients.</p>
+      </div>
+      <div class="bento-card">
+        <div class="card-icon">🛠️</div>
+        <h3>IT Support &amp; Troubleshooting</h3>
+        <p>Reliable support for PCs, laptops, printers, networks, and secure device setups so your team stays productive without frustrating downtime.</p>
+      </div>
+      <div class="bento-card">
+        <div class="card-icon">⚡</div>
+        <h3>Workflow Optimisations &amp; Automation</h3>
+        <p>Eliminate manual data re-entry and paperwork bottlenecks by connecting your office systems smoothly and saving hours every week.</p>
+      </div>
+      <div class="bento-card">
+        <div class="card-icon">💡</div>
+        <h3>Practical IT Consulting</h3>
+        <p>Cost-effective planning, security guidance, and technical advice tailored specifically for small business budgets and steady growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why SpiroTech -->
+  <section class="section alt-bg">
+    <div class="center">
+      <span class="kicker">Why choose us</span>
+      <h2>Why SpiroTech?</h2>
+      <p class="section-lead">
+        Practical support, smarter workflows, and clear guidance for individuals and small businesses that need technology to work properly.
+      </p>
+    </div>
 
     <div class="grid">
       <div class="card">
+        <div class="card-icon">🤝</div>
         <h3>Practical, Business-Focused Help</h3>
         <p>
-          We focus on real-world solutions that reduce downtime, improve reliability,
-          and help you get more value from the tools you already use.
+          We focus on real-world solutions that reduce downtime, improve reliability, and help you get more value from the tools you already use.
         </p>
       </div>
 
       <div class="card">
-        <h3>Support and Automation in One Place</h3>
+        <div class="card-icon">⚙️</div>
+        <h3>Support &amp; Optimisation in One Place</h3>
         <p>
-          From troubleshooting devices and Microsoft 365 issues to building smarter
-          workflows, we bridge day-to-day IT support with business process improvement.
+          From troubleshooting hardware and Microsoft 365 issues to building smarter workflows, we bridge day-to-day IT support with business process improvement.
         </p>
       </div>
 
       <div class="card">
+        <div class="card-icon">📋</div>
         <h3>Clear Documentation &amp; Handover</h3>
         <p>
-          We don't just fix the problems and disappear. Where needed, we document the work,
-          explain the setup, give due training and leave you with practical guidance for ongoing use.
+          We don't just fix problems and disappear. We document the work, explain the setup, and leave you with practical guidance for ongoing peace of mind.
         </p>
       </div>
     </div>
   </section>
 
+  <!-- Industry Solutions & Case Studies (Fixed Visuals) -->
   <section class="section">
-    <div class="center">
-      <span class="kicker">
-  <!-- Industry Quick-Filter & Case Studies -->
-  <section style="padding: 60px 32px; background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
-    <div style="max-width: 1000px; margin: 0 auto;">
-      <h2 style="text-align: center; margin-bottom: 12px; color: var(--accent);">Tailored Solutions For Your Industry</h2>
-      <p style="text-align: center; color: var(--muted); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">Select your industry below to see how we remove day-to-day friction and unlock your M365 environment.</p>
+    <div class="industry-container">
+      <div class="center">
+        <span class="kicker">Tailored Expertise</span>
+        <h2>Solutions For Your Industry</h2>
+        <p class="section-lead">Select your industry below to see how we remove day-to-day friction and streamline your Microsoft 365 environment.</p>
+      </div>
       
       <!-- Industry Filter Buttons -->
-      <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 40px;">
-        <button onclick="showIndustry('accounting')" class="ind-btn active-ind" id="btn-accounting" style="background: var(--panel); border: 1px solid var(--accent); color: var(--text); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">Accountants</button>
-        <button onclick="showIndustry('realestate')" class="ind-btn" id="btn-realestate" style="background: var(--panel); border: 1px solid #334155; color: var(--text); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">Real Estate</button>
-        <button onclick="showIndustry('medical')" class="ind-btn" id="btn-medical" style="background: var(--panel); border: 1px solid #334155; color: var(--text); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">Medical Practices</button>
-        <button onclick="showIndustry('contractors')" class="ind-btn" id="btn-contractors" style="background: var(--panel); border: 1px solid #334155; color: var(--text); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;">Contractors</button>
+      <div class="industry-btn-group">
+        <button onclick="showIndustry('accounting')" class="ind-btn active-ind" id="btn-accounting">Accountants</button>
+        <button onclick="showIndustry('realestate')" class="ind-btn" id="btn-realestate">Real Estate</button>
+        <button onclick="showIndustry('medical')" class="ind-btn" id="btn-medical">Medical Practices</button>
+        <button onclick="showIndustry('contractors')" class="ind-btn" id="btn-contractors">Contractors</button>
       </div>
 
       <!-- Industry Detail Card -->
-      <div id="ind-card" style="background: var(--panel); border: 1px solid #334155; border-radius: 12px; padding: 30px; margin-bottom: 50px;">
-        <h3 id="ind-title" style="color: var(--accent); margin-top: 0; margin-bottom: 12px;">Accountants & Financial Professionals</h3>
-        <p id="ind-desc" style="color: var(--text); line-height: 1.6;">Chasing missing client tax documents, messy shared folders, and secure document sharing worries? We clean up your M365 file structure, set up secure client upload portals, and eliminate repetitive spreadsheet copying.</p>
+      <div id="ind-card" class="industry-detail-card">
+        <h3 id="ind-title" style="color: var(--accent); margin-top: 0; margin-bottom: 12px; font-size: 1.3rem;">Accountants &amp; Financial Professionals</h3>
+        <p id="ind-desc" style="color: var(--text); line-height: 1.7; margin: 0;">Chasing missing client tax documents, messy shared folders, and secure document sharing worries? We clean up your file structure, set up secure client upload portals, and eliminate repetitive spreadsheet copying.</p>
       </div>
 
-      <!-- Mini Before & After Case Studies -->
-      <h3 style="text-align: center; margin-bottom: 30px; color: var(--text);">Real Workflow Transformation</h3>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-        <div style="background: var(--panel); border: 1px solid #334155; border-radius: 12px; padding: 24px;">
-          <h4 style="color: var(--accent); margin-top: 0;">Case Study: Document Chaos</h4>
-          <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 12px;"><strong>Before:</strong> Client files scattered across local laptops, causing version conflicts and lost emails.</p>
-          <p style="color: var(--text); font-size: 0.95ln; margin-bottom: 0;"><strong>After:</strong> Unified SharePoint structure with secure access controls and automated backup guidance. Finding a file went from 15 minutes to 5 seconds.</p>
+      <!-- Mini Before & After Case Studies with Big Stats -->
+      <div class="center" style="margin-top: 50px; margin-bottom: 30px;">
+        <h3>Real Workflow Transformation</h3>
+      </div>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="card case-study-card">
+          <div class="stat-badge">15 min → 5 sec</div>
+          <h4>Document Chaos Solved</h4>
+          <p class="muted-text"><strong>Before:</strong> Client files scattered across local laptops, causing version conflicts and lost emails.</p>
+          <p><strong>After:</strong> Unified SharePoint structure with secure access controls and automated backup guidance. Finding a file went from 15 minutes to 5 seconds.</p>
         </div>
-        <div style="background: var(--panel); border: 1px solid #334155; border-radius: 12px; padding: 24px;">
-          <h4 style="color: var(--accent); margin-top: 0;">Case Study: Manual Data Entry</h4>
-          <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 12px;"><strong>Before:</strong> Staff re-typing client inquiry details from emails into spreadsheets every afternoon.</p>
-          <p style="color: var(--text); font-size: 0.95ln; margin-bottom: 0;"><strong>After:</strong> Built-in M365 form and sheet automation capturing data instantly with built-in sanity checks—saving 6+ hours weekly.</p>
+        <div class="card case-study-card">
+          <div class="stat-badge">6+ hrs saved weekly</div>
+          <h4>Manual Data Entry Eliminated</h4>
+          <p class="muted-text"><strong>Before:</strong> Staff re-typing client inquiry details from emails into spreadsheets every afternoon.</p>
+          <p><strong>After:</strong> Built-in M365 form and sheet automation capturing data instantly with built-in sanity checks.</p>
         </div>
       </div>
     </div>
@@ -186,7 +204,7 @@
     const industryData = {
       accounting: {
         title: "Accountants & Financial Professionals",
-        desc: "Chasing missing client tax documents, messy shared folders, and secure document sharing worries? We clean up your M365 file structure, set up secure client upload portals, and eliminate repetitive spreadsheet copying."
+        desc: "Chasing missing client tax documents, messy shared folders, and secure document sharing worries? We clean up your file structure, set up secure client upload portals, and eliminate repetitive spreadsheet copying."
       },
       realestate: {
         title: "Real Estate Agencies",
@@ -198,6 +216,162 @@
       },
       contractors: {
         title: "Contractors & Builders",
+        desc: "Disconnected field-to-office communication, delayed quotes, and lost paperwork. We set up reliable cloud document sharing and quick quoting templates that work seamlessly on-site or in the office."
+      }
+    };
+
+    function showIndustry(key) {
+      document.querySelectorAll('.ind-btn').forEach(b => {
+        b.classList.remove('active-ind');
+      });
+      const activeBtn = document.getElementById('btn-' + key);
+      if (activeBtn) activeBtn.classList.add('active-ind');
+
+      document.getElementById('ind-title').innerText = industryData[key].title;
+      document.getElementById('ind-desc').innerText = industryData[key].desc;
+    }
+
+    // Mobile Navigation Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+  </script>
+
+  <!-- Support Options -->
+  <section class="section alt-bg">
+    <div class="center">
+      <span class="kicker">Support Options</span>
+      <h2>Support That Fits Your Budget</h2>
+      <p class="section-lead">
+        Whether you need once-off assistance, a workflow project, or ongoing support, we keep pricing transparent and predictable.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card pricing-card">
+        <div class="price-tag">From R450 / hr</div>
+        <h3>Once-Off Support</h3>
+        <p>
+          Best for troubleshooting, device issues, Microsoft 365 problems, printer setup, connectivity issues, and practical technical fixes.
+        </p>
+      </div>
+
+      <div class="card pricing-card">
+        <div class="price-tag">Project Based</div>
+        <h3>Workflow Projects</h3>
+        <p>
+          Ideal for automations, workflows, cleanup projects, small business setup work, audit, and process improvement.
+        </p>
+      </div>
+
+      <div class="card pricing-card">
+        <div class="price-tag">From R1,500 / mo</div>
+        <h3>Ongoing Assistance</h3>
+        <p>
+          For businesses that need regular assistance, structured support, and a reliable partner to trust with recurring technical needs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security & How We Work -->
+  <section class="section">
+    <div class="center">
+      <span class="kicker">Reliability &amp; Process</span>
+      <h2>Built for Reliability, Not Just Quick Fixes</h2>
+    </div>
+
+    <div class="split">
+      <div class="panel highlight">
+        <h3>Security &amp; Business Continuity</h3>
+        <ul class="bullets">
+          <li>Practical security hardening and safer account setups</li>
+          <li>Microsoft 365 support with better structure and control</li>
+          <li>Backup and recovery guidance for important business data</li>
+          <li>Workflow designs that reduce manual errors or double captures</li>
+          <li>Clear documentation that makes handover and support easy</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>How Projects Usually Run</h3>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h4>Assess</h4>
+              <p>We understand the issue, your current setup, and what outcome you need.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h4>Improve</h4>
+              <p>We implement a solution, setup, or workflow improvement that suits your environment.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h4>Support</h4>
+              <p>We provide guidance, documentation, and next steps so the solution stays useful long-term.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-strip">
+      <a class="btn btn-primary" href="https://wa.me/27751101718?text=Hi%20SpiroTech,%20I'd%20like%20to%20discuss%20an%20IT%20support%20request." target="_blank">WhatsApp Us Now</a>
+      <a class="btn btn-secondary" href="contact/">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- Footer with Contact details, POPIA, social links -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <strong>SpiroTech IT Solutions</strong>
+        <p>Practical IT support, Microsoft 365 support, workflow optimisations, and consulting for small businesses.</p>
+        <p>📍 Pretoria, South Africa (Remote support nationwide)</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📞 Phone / WhatsApp: <a href="tel:+27751101718">+27 75 110 1718</a></p>
+        <p>✉️ Email: <a href="mailto:spirotech.solutions@outlook.com">spirotech.solutions@outlook.com</a></p>
+        <p>💬 <a href="https://wa.me/27751101718" target="_blank">Chat on WhatsApp</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <p><a href="index.html">Home</a> | <a href="about/">About</a></p>
+        <p><a href="services/">Services</a> | <a href="portfolio/">Portfolio</a></p>
+        <p><a href="contact/">Request a Quote</a> | <a href="pitch.html">For You</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SpiroTech IT Solutions. All rights reserved. &nbsp;|&nbsp; POPIA Compliant &nbsp;|&nbsp; <a href="contact/">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile WhatsApp / Call Bar -->
+  <div class="mobile-sticky-bar">
+    <a href="https://wa.me/27751101718?text=Hi%20SpiroTech,%20I%20need%20IT%20support." target="_blank" class="sticky-btn whatsapp-sticky">
+      💬 WhatsApp Us
+    </a>
+    <a href="tel:+27751101718" class="sticky-btn call-sticky">
+      📞 Call Now
+    </a>
+  </div>
+
+</body>
+</html>
         desc: "Disconnected field-to-office communication, delayed quotes, and lost paperwork. We set up reliable cloud document sharing and quick quoting templates that work seamlessly on-site or in the office."
       }
     };

@@ -1,32 +1,19 @@
-/* ============ SpiroTech Global Styles ============ */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-:root {
-  --bg: #0b0d10;
-  --panel: #11141a;
-  --text: #eaeaea;
-  --muted: #9ca3af;
-  --accent: #00e5ff;
+/* Top Bar & Nav */
+.top-bar {
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 8px 32px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #334155;
 }
+.top-bar a { color: var(--accent); text-decoration: none; }
+.top-bar a:hover { text-decoration: underline; }
 
-* { box-sizing: border-box; }
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
-
-/* NAV */
 .nav {
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
+  background: rgba(11, 13, 16, 0.85);
+  backdrop-filter: blur(10px);
   padding: 16px 32px;
   display: flex;
   justify-content: space-between;
@@ -34,70 +21,80 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid #334155;
 }
 
-.brand {
-  font-weight: 700;
-  letter-spacing: 0.3px;
-}
+.brand-link { font-size: 1.25rem; font-weight: 700; color: var(--text); }
 
-.nav a {
+.nav-links { display: flex; align-items: center; }
+.nav-links a {
   color: var(--text);
   text-decoration: none;
   margin-left: 24px;
   font-weight: 500;
+  padding: 8px 0;
 }
-.nav a:hover { color: var(--accent); }
+.nav-links a:hover { color: var(--accent); }
+.nav-links a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
 
-/* ============ ACTIVE NAV LINK ============ */
-
-/* Base nav link (already in your file) */
-/* .nav a { color: var(--text); ... } */
-
-/* Current-page link */
-.nav a.active {
-  color: var(--accent);
-  position: relative;
-}
-
-/* Underline accent for current page (desktop & mobile) */
-.nav a.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -8px;                 /* distance below text */
-  height: 2px;
+.btn-quote {
   background: var(--accent);
-  border-radius: 2px;
-  opacity: 0.9;
+  color: #000 !important;
+  padding: 8px 16px !important;
+  border-radius: 6px;
+  font-weight: 600 !important;
 }
 
-/* Optional: subtle hover lift on all nav links */
-.nav a:hover {
-  color: var(--accent);
-  text-shadow: 0 0 10px rgba(0, 229, 255, 0.25);
-}
+.menu-toggle { display: none; background: none; border: none; color: var(--text); font-size: 1.5rem; cursor: pointer; }
 
-/* HERO */
+/* Hero */
 .hero {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-  padding: 120px 20px;
+  padding: 100px 20px;
   text-align: center;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(0, 229, 255, 0.16), transparent 22%),
-    radial-gradient(circle at 80% 30%, rgba(0, 229, 255, 0.10), transparent 18%),
-    linear-gradient(135deg, #020617 0%, #0b1120 45%, #07131f 100%);
+  background: var(--bg);
+}
+.hero h1 { font-size: 3.5rem; margin: 20px 0; color: #fff; }
+.hero-content { max-width: 800px; margin: 0 auto; }
+.trust-pill {
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid var(--accent);
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+.hero-cta-group { display: flex; gap: 16px; justify-content: center; margin: 30px 0; }
+.hero-subinfo { display: flex; gap: 16px; justify-content: center; color: var(--muted); font-size: 0.95rem; }
+
+/* Bento Grid */
+.bento-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1000px; margin: 40px auto; }
+.bento-card { background: var(--panel); border: 1px solid #334155; border-radius: 16px; padding: 32px; text-align: left; transition: transform 0.2s; }
+.card-icon { font-size: 2rem; margin-bottom: 16px; }
+
+/* Industry Container */
+.industry-container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+.industry-btn-group { display: flex; gap: 10px; justify-content: center; margin-bottom: 30px; }
+.ind-btn { background: #11141a; border: 1px solid #334155; color: var(--text); padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+.ind-btn.active-ind { border-color: var(--accent); background: rgba(0, 229, 255, 0.1); }
+.industry-detail-card { background: var(--panel); border: 1px solid var(--accent); border-radius: 12px; padding: 30px; min-height: 150px; }
+.stat-badge { background: var(--accent); color: #000; padding: 4px 12px; border-radius: 20px; font-weight: 700; display: inline-block; margin-bottom: 10px; }
+
+/* Sticky Mobile Bar */
+.mobile-sticky-bar { display: none; position: fixed; bottom: 0; width: 100%; display: flex; background: var(--bg); border-top: 1px solid #334155; }
+.sticky-btn { flex: 1; padding: 16px; text-align: center; text-decoration: none; color: #fff; font-weight: 600; }
+.whatsapp-sticky { background: #25d366; }
+.call-sticky { background: #00e5ff; color: #000; }
+
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .nav-links { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--bg); flex-direction: column; padding: 20px; border-bottom: 1px solid #334155; }
+  .nav-links.show { display: flex; }
+  .nav-links a { margin: 10px 0; }
+  .bento-grid { grid-template-columns: 1fr; }
+  .mobile-sticky-bar { display: flex; }
 }
 
-/* Animated grid overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -2;
   opacity: 0.28;
   background-image:
     linear-gradient(rgba(0, 229, 255, 0.08) 1px, transparent 1px),
