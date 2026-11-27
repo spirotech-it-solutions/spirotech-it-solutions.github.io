@@ -1,17 +1,18 @@
 /* ==========================================================================
-   SpiroTech IT Solutions — NVIDIA-Inspired Enterprise Theme
+   SpiroTech IT Solutions — Brand Theme (Cyan/Blue Palette)
    ========================================================================== */
 
 :root {
   --bg-dark: #0B0E14;
   --bg-card: #121824;
   --bg-card-hover: #1A2232;
-  --nvidia-green: #76B900;
-  --nvidia-green-hover: #82CB00;
+  --spirotech-cyan: #00FFFF;
+  --spirotech-cyan-dim: #00E6FF;
+  --spirotech-blue: #009DD5;
+  --spirotech-blue-dark: #005A68;
   --text-primary: #FFFFFF;
   --text-secondary: #94A3B8;
   --border-color: #222D42;
-  --accent-blue: #3B82F6;
 }
 
 * {
@@ -61,18 +62,10 @@ body {
   gap: 12px;
 }
 
-.logo-mark {
-  background: var(--nvidia-green);
-  color: #000;
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 1.25rem;
-  box-shadow: 0 0 20px rgba(118, 185, 0, 0.4);
+.logo-image {
+  height: 44px;
+  width: auto;
+  filter: drop-shadow(0 0 16px rgba(0, 255, 255, 0.3));
 }
 
 .logo-text {
@@ -97,7 +90,7 @@ body {
 
 .nvidia-nav-links a:hover,
 .nvidia-nav-links a.active {
-  color: var(--nvidia-green);
+  color: var(--spirotech-cyan);
 }
 
 .nvidia-nav-actions {
@@ -107,7 +100,7 @@ body {
 }
 
 .nvidia-btn-accent {
-  background: var(--nvidia-green);
+  background: var(--spirotech-cyan);
   color: #000;
   padding: 10px 22px;
   border-radius: 6px;
@@ -115,11 +108,11 @@ body {
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.2s;
-  box-shadow: 0 4px 14px rgba(118, 185, 0, 0.25);
+  box-shadow: 0 4px 14px rgba(0, 255, 255, 0.25);
 }
 
 .nvidia-btn-accent:hover {
-  background: var(--nvidia-green-hover);
+  background: var(--spirotech-cyan-dim);
   transform: translateY(-1px);
 }
 
@@ -148,7 +141,7 @@ body {
 
 .sub-nav-title {
   font-weight: 700;
-  color: var(--nvidia-green);
+  color: var(--spirotech-cyan);
   letter-spacing: 0.5px;
 }
 
@@ -164,7 +157,7 @@ body {
 }
 
 .sub-nav-links a:hover {
-  color: #fff;
+  color: var(--spirotech-cyan);
 }
 
 /* --- Hero Showcase Section --- */
@@ -181,9 +174,9 @@ body {
 
 .hero-badge {
   display: inline-block;
-  background: rgba(118, 185, 0, 0.12);
-  color: var(--nvidia-green);
-  border: 1px solid rgba(118, 185, 0, 0.3);
+  background: rgba(0, 255, 255, 0.12);
+  color: var(--spirotech-cyan);
+  border: 1px solid rgba(0, 255, 255, 0.3);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -201,7 +194,7 @@ body {
 }
 
 .nvidia-hero h1 span {
-  color: var(--nvidia-green);
+  color: var(--spirotech-cyan);
 }
 
 .nvidia-hero p {
@@ -229,14 +222,14 @@ body {
   font-size: 0.95rem;
 }
 
-.btn-green {
-  background: var(--nvidia-green);
+.btn-cyan {
+  background: var(--spirotech-cyan);
   color: #000;
-  box-shadow: 0 4px 20px rgba(118, 185, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
 }
 
-.btn-green:hover {
-  background: var(--nvidia-green-hover);
+.btn-cyan:hover {
+  background: var(--spirotech-cyan-dim);
   transform: translateY(-2px);
 }
 
@@ -247,8 +240,8 @@ body {
 }
 
 .btn-outline:hover {
-  border-color: var(--nvidia-green);
-  color: var(--nvidia-green);
+  border-color: var(--spirotech-cyan);
+  color: var(--spirotech-cyan);
   transform: translateY(-2px);
 }
 
@@ -269,8 +262,8 @@ body {
 
 .badge-tag {
   display: inline-block;
-  background: rgba(59, 130, 246, 0.15);
-  color: var(--accent-blue);
+  background: rgba(0, 157, 213, 0.15);
+  color: var(--spirotech-blue);
   padding: 4px 12px;
   border-radius: 4px;
   font-size: 0.8rem;
@@ -292,7 +285,7 @@ body {
 }
 
 .link-arrow {
-  color: var(--nvidia-green);
+  color: var(--spirotech-cyan);
   text-decoration: none;
   font-weight: 700;
   display: inline-flex;
@@ -354,13 +347,13 @@ body {
 
 .nvidia-card:hover {
   transform: translateY(-4px);
-  border-color: var(--nvidia-green);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  border-color: var(--spirotech-cyan);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5), 0 0 20px rgba(0, 255, 255, 0.1);
   background: var(--bg-card-hover);
 }
 
 .card-tag {
-  color: var(--nvidia-green);
+  color: var(--spirotech-cyan);
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -391,7 +384,7 @@ body {
 }
 
 .card-link:hover {
-  color: var(--nvidia-green);
+  color: var(--spirotech-cyan);
 }
 
 /* --- Split Layout Section --- */
@@ -431,7 +424,7 @@ body {
 
 .check-list li::before {
   content: "✔";
-  color: var(--nvidia-green);
+  color: var(--spirotech-cyan);
   font-weight: bold;
 }
 
@@ -445,7 +438,7 @@ body {
 .stat-box h3 {
   font-size: 3.5rem;
   font-weight: 800;
-  color: var(--nvidia-green);
+  color: var(--spirotech-cyan);
   margin-bottom: 8px;
   line-height: 1;
 }
@@ -502,7 +495,7 @@ body {
 }
 
 .footer-col a:hover {
-  color: var(--nvidia-green);
+  color: var(--spirotech-cyan);
 }
 
 .footer-bottom {
@@ -543,7 +536,7 @@ body {
 }
 
 .call-sticky {
-  background: var(--nvidia-green);
+  background: var(--spirotech-cyan);
   color: #000;
 }
 
